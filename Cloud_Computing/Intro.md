@@ -59,10 +59,11 @@ The shared responsibility model is heavily tied into the cloud service types (co
 
 
 
-##Define cloud models, including public, private, and hybrid.
+## Define cloud models, including public, private, and hybrid.
 
 What are cloud models? The cloud models define the deployment type of cloud resources. 
 The three main cloud models are: 
+
         private, public, and hybrid.
 
 1.PRIVATE CLOUD
@@ -91,8 +92,8 @@ What if you’re already established with VMware in a private cloud environment 
 
 
 
-##Identify appropriate use cases for each cloud model.
+## Identify appropriate use cases for each cloud model.
 
-##Describe the consumption-based model.
+## Describe the consumption-based model.
 
-##Compare cloud pricing models.
+## Compare cloud pricing models.
