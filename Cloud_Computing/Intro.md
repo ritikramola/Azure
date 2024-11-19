@@ -17,6 +17,7 @@ Start with a traditional corporate datacenter. The company is responsible for ma
 1. With the shared responsibility model, these responsibilities get shared between the cloud provider and the consumer.
 2. Physical security, power, cooling, and network connectivity are the responsibility of the CLOUD PROVIDER .
  The consumer isn’t collocated with the datacenter, so it wouldn’t make sense for the consumer to have any of those responsibilities.
+ 
 3.the CONSUMER is responsible for the data and information stored in the cloud. (You wouldn’t want the cloud provider to be able to read your information.) The consumer is also responsible for access security, meaning you only give access to those who need it.
 
 for some things, the responsibility depends on the situation. If you’re using a cloud SQL database, the CLOUD PROVIDER would be responsible for maintaining the actual database. However, you’re still responsible for the data that gets ingested into the database. If you deployed a virtual machine and installed an SQL database on it, you’d be responsible for database patches and updates, as well as maintaining the data and information stored in the database.
