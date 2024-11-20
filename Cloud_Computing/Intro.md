@@ -94,6 +94,43 @@ What if you’re already established with VMware in a private cloud environment 
 
 ## Identify appropriate use cases for each cloud model.
 
+
+Here are some use cases for cloud computing:
+
+Disaster recovery
+Cloud infrastructure can help with data recovery and business continuity in the event of a disaster. 
+
+Storage
+
+Cloud storage can store large amounts of data and is becoming the new standard for IT solutions. 
+
+Test and development
+
+The cloud's flexibility allows for quick environment creation, testing, and destruction. 
+
+Application migration
+
+Hybrid clouds can provide secure landing zones for migrating applications. 
+
+Artificial intelligence as a service
+
+Cloud-hosted AI libraries, modeling engines, and algorithms can be crucial for adopting AI. 
+
+Cost savings
+
+IaaS (Infrastructure as a Service) helps reduce upfront capital expenditures by allowing users to pay for only the 
+resources they consume. 
+
+
+Production workload hosting
+The public cloud can be used to host live production workloads. 
+
+
+Uncertain and excessive cloud costs
+Clouds are more like utilities, with pay-per-use cost models that can result in different costs to operate a workload. 
+
+
+
 ## Describe the consumption-based model.
 
 When comparing IT infrastructure models, there are two types of expenses to consider. Capital expenditure (CapEx) and operational expenditure (OpEx).
