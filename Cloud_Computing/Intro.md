@@ -94,6 +94,32 @@ What if you’re already established with VMware in a private cloud environment 
 
 ## Identify appropriate use cases for each cloud model.
 
+When comparing IT infrastructure models, there are two types of expenses to consider. Capital expenditure (CapEx) and operational expenditure (OpEx).
+
+CapEx is typically a one-time, up-front expenditure to purchase or secure tangible resources. A new building, repaving the parking lot, building a datacenter, or buying a company vehicle are examples of CapEx.
+
+OpEx is spending money on services or products over time. Renting a convention center, leasing a company vehicle, or signing up for cloud services are all examples of OpEx.
+
+Cloud computing falls under **OpEx** because cloud computing operates on a consumption-based model. With cloud computing, you don’t pay for the physical infrastructure, the electricity, the security, or anything else associated with maintaining a datacenter. Instead, you pay for the IT resources you use. If you don’t use any IT resources this month, you don’t pay for any IT resources.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Describe the consumption-based model.
 
 ## Compare cloud pricing models.
