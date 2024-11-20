@@ -109,9 +109,13 @@ This consumption-based model has many benefits, including:
 
 
 1.No upfront costs.
+
 2.No need to purchase and manage costly infrastructure that users might not use to its fullest potential.
+
 3.The ability to pay for more resources when they're needed.
+
 4.The ability to stop paying for resources that are no longer needed.
+
 
 With a traditional datacenter, you try to estimate the future resource needs. If you overestimate, you spend more on your datacenter than you need to and potentially waste money. If you underestimate, your datacenter will quickly reach capacity and your applications and services may suffer from decreased performance. Fixing an under-provisioned datacenter can take a long time. You may need to order, receive, and install more hardware. You'll also need to add power, cooling, and networking for the extra hardware.
 
@@ -125,8 +129,11 @@ In a cloud-based model, you don’t have to worry about getting the resource nee
 Cloud computing is the delivery of computing services over the internet by using a pay-as-you-go pricing model. You typically pay only for the cloud services you use, which helps you:
 
 1.Plan and manage your operating costs.
+
 2.Run your infrastructure more efficiently.
+
 3.Scale as your business needs change.
+
 
 cloud computing is a way to rent compute power and storage from someone else’s datacenter. You can treat cloud resources like you would resources in your own datacenter. However, unlike in your own datacenter, when you're done using cloud resources, you give them back. You’re billed only for what you use.
 
