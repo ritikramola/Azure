@@ -75,7 +75,7 @@ Infrastructure as a Service (IaaS)
 
 The most flexible cloud computing model, IaaS provides virtualized physical computing resources over the Internet. Azure’s IaaS solutions, like Azure Virtual Machines and Azure Virtual Network, offer a fully outsourced infrastructure that includes servers, storage, and networking components.
 
-Appropriate Use Cases for IaaS:
+### Appropriate Use Cases for IaaS:
 
 Test and Development: Quickly setting up and dismantling test and development environments, offering a cost-effective, scalable solution.
 Website Hosting: Hosting websites on IaaS can be more flexible and cost-effective than traditional web hosting.
@@ -88,7 +88,7 @@ Platform as a Service (PaaS)
 
 PaaS delivers a framework for developers to build upon and create customized applications. Azure’s PaaS offerings, like Azure Web Apps and Azure SQL Database, include operating systems, middleware, and runtime environments.
 
-Appropriate Use Cases for PaaS:
+### Appropriate Use Cases for PaaS:
 
 Application Development: Streamlining the development process with a pre-configured platform, which can considerably reduce coding time.
 API Development and Management: Creating and managing APIs easily without worrying about the underlying infrastructure.
@@ -102,7 +102,7 @@ Software as a Service (SaaS)
 
 SaaS provides a complete software solution which consumers can purchase on a pay-as-you go basis from a cloud service provider. Azure’s SaaS solutions include Microsoft Office 365, Dynamics 365, and various third-party applications available through the Azure Marketplace.
 
-Appropriate Use Cases for SaaS:
+### Appropriate Use Cases for SaaS:
 
 Email Services: Outsource the complexity of email service setup and administration with services like Microsoft Exchange Online.
 Collaboration and Communication: Utilize platforms like Microsoft Teams for advanced communication solutions without the complexity of in-house deployment and maintenance.
