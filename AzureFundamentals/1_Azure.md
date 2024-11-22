@@ -53,23 +53,20 @@ When you're completing a Learn module, you're welcome to use your personal subsc
 
 1. Use the PowerShell CLI
 
--->Activate Sandbox
+        Activate Sandbox
 
--->select powershell option 
+        select powershell option 
 
--->run command "Get-date" -->U will get date
+        run command "Get-date" -->U will get date
 
--->run command "az version" -->powershell version
+        run command "az version" -->powershell version
 
 2. Use the BASH CLI
 
--->run command "bash" -->You can tell you're in BASH mode by the username displayed on the command line. It will be your username@azure.
-
--->run command "Get-date" --> this will throw error
-
--->Now run date -->will get today's date
-
--->run command "az upgrade"
+        run command "bash" -->You can tell you're in BASH mode by the username displayed on the command line. It will be your username@azure.
+        run command "Get-date" --> this will throw error
+        Now run date -->will get today's date
+        run command "az upgrade"
 
 3. Use Azure CLI interactive mode 
     (wht is interactive mode ? *ANSWER*: This changes CLI behavior to more closely resemble an integrated development environment (IDE). Interactive mode provides autocompletion, command descriptions, and even examples.)
