@@ -70,9 +70,9 @@ When you're completing a Learn module, you're welcome to use your personal subsc
 
 9.az interactive (image link:https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/azure-interactive-mode-c8421a2d-3c3d662b.png)
 
-10.version
-11.upgrade
-12.exit
+version
+upgrade
+exit
 
 
 ### Describe Azure physical infrastructure
@@ -82,7 +82,7 @@ Throughout your journey with Microsoft Azure, you’ll hear and use terms like R
         the physical infrastructure, and the management infrastructure.
 
 
-1. Physical infrastructure
+1.  Physical infrastructure
 
 The physical infrastructure for Azure starts with datacenters. Conceptually, the datacenters are the same as large corporate datacenters. They’re facilities with resources arranged in racks, with dedicated power, cooling, and networking infrastructure.
 
@@ -90,7 +90,7 @@ As a global cloud provider, Azure has datacenters around the world. However, the
 
 The **Global** infrastructure site gives you a chance to interactively explore the underlying Azure infrastructure.
 
-2. Regions
+2.  Regions
 
 A region is a geographical area on the planet that contains at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network. Azure intelligently assigns and controls the resources within each region to ensure workloads are appropriately balanced.
 
@@ -116,7 +116,9 @@ You can use availability zones to run mission-critical applications and build hi
 Availability zones are primarily for VMs, managed disks, load balancers, and SQL databases. Azure services that support availability zones fall into three categories:
 
 1.Zonal services: You pin the resource to a specific zone (for example, VMs, managed disks, IP addresses).
+
 2.Zone-redundant services: The platform replicates automatically across zones (for example, zone-redundant storage, SQL Database).
+
 3.Non-regional services: Services are always available from Azure geographies and are resilient to zone-wide outages as well as region-wide outages.
 
 Even with the additional resiliency that availability zones provide, it’s possible that an event could be so large that it impacts multiple availability zones in a single region. To provide even further resilience, Azure has Region Pairs.
