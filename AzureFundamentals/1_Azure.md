@@ -224,20 +224,35 @@ Some examples of how you could use management groups might be:
 
  ####       Setting	Value
 Subscription	Concierge Subscription
+
 Resource group	Select the resource group name that begins with learn.
+
 Virtual machine name	my-VM
+
 Region	Leave default
+
 Availability options	Leave default
+
 Security type	Leave default
+
 Image	Leave default
+
 VM architecture	Leave default
+
 Run with Azure Spot discount	Unchecked
+
 Size	Leave default
+
 Authentication type	Password
+
 Username	azureuser
+
 Password	Enter a custom password
+
 Confirm password	Reenter the custom password
+
 Public inbound ports	None
+
                 Select Review and Create.
                 Select Create
 
