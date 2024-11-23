@@ -213,3 +213,46 @@ Some examples of how you could use management groups might be:
                 3.Each management group and subscription can support only one parent.
 
 
+## Create an Azure resource
+
+#### Task 1: Create a virtual machine
+
+                Sign in to the Azure portal.
+                Select Create a resource > Compute > Virtual Machine > Create.
+                The Create a virtual machine pane opens to the basics tab.
+                Verify or enter the following values for each setting. If a setting isn’t specified, leave the default value.
+
+ ####       Setting	Value
+Subscription	Concierge Subscription
+Resource group	Select the resource group name that begins with learn.
+Virtual machine name	my-VM
+Region	Leave default
+Availability options	Leave default
+Security type	Leave default
+Image	Leave default
+VM architecture	Leave default
+Run with Azure Spot discount	Unchecked
+Size	Leave default
+Authentication type	Password
+Username	azureuser
+Password	Enter a custom password
+Confirm password	Reenter the custom password
+Public inbound ports	None
+                Select Review and Create.
+                Select Create
+
+
+#### Task 2: Verify resources created
+
+                Select Home.
+                Select Resource groups.
+                Select the [sandbox resource group name] resource group.
+
+Congratulations! You've created a resource in Azure and had a chance to see how resources get grouped on creation.            
+
+Clean up
+
+The sandbox automatically cleans up your resources when you're finished with this module.
+
+When you're working in your own subscription, it's a good idea at the end of a project to identify whether you still need the resources you created. Resources that you leave running can cost you money. You can delete resources individually or delete the resource group to delete the entire set of resources.
+
