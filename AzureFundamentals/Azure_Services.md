@@ -64,7 +64,7 @@ When you provision a VM, you’ll also have the chance to pick the resources tha
             Networking (virtual network, public IP address, and port configuration)
 
 
-<<<<missing here>>>>
+---------------content not available----------
 
 
 ### Describe Azure virtual desktop
@@ -72,6 +72,7 @@ When you provision a VM, you’ll also have the chance to pick the resources tha
 Another type of virtual machine is the Azure Virtual Desktop. Azure Virtual Desktop is a desktop and application virtualization service that runs on the cloud. It enables you to use a cloud-hosted version of Windows from any location. Azure Virtual Desktop works across devices and operating systems, and works with apps that you can use to access remote desktops or most modern browsers.
 
 #### Enhance security
+
 Azure Virtual Desktop provides centralized security management for users' desktops with Microsoft Entra ID. You can enable multifactor authentication to secure user sign-ins. You can also secure access to data by assigning granular role-based access controls (RBACs) to users.
 
 With Azure Virtual Desktop, the data and apps are separated from the local hardware. The actual desktop and apps are running in the cloud, meaning the risk of confidential data being left on a personal device is reduced. Additionally, user sessions are isolated in both single and multi-session environments.
