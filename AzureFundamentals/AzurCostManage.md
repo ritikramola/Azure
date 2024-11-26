@@ -92,7 +92,118 @@ With the TCO calculator, you enter your configuration, add in assumptions like p
 image:https://learn.microsoft.com/en-us/training/wwl-azure/describe-cost-management-azure/media/total-cost-ownership-657fe344.png
 
 
-**CONTENT MISSSING**
+## Exercise - Estimate workload costs by using the Pricing calculator
+
+### Define your requirements
+
+Before you run the Pricing calculator, you need a sense of what Azure services you need.
+
+For a basic web application hosted in your datacenter, you might run a configuration similar to the following.
+
+An ASP.NET web application that runs on Windows. The web application provides information about product inventory and pricing. There are two virtual machines that are connected through a central load balancer. The web application connects to a SQL Server database that holds inventory and pricing information.
+
+To migrate to Azure, you might:
+
+    Use Azure Virtual Machines instances, similar to the virtual machines used in your datacenter.
+    Use Azure Application Gateway for load balancing.
+    Use Azure SQL Database to hold inventory and pricing information.
+
+In practice, you would define your requirements in greater detail. But here are some basic facts and requirements to get you started:
+
+    The application is used internally. It's not accessible to customers.
+    This application doesn't require a massive amount of computing power.   
+    The virtual machines and the database run all the time (730 hours per month).
+    The network processes about 1 TB of data per month.
+    The database doesn't need to be configured for high-performance workloads and requires no more than 32 GB of storage.
+
+Explore the Pricing calculator
+Let's start with a quick tour of the Pricing calculator.
+
+Go to the Pricing calculator.
+
+Notice the following tabs:
+
+link:https://learn.microsoft.com/en-us/training/wwl-azure/describe-cost-management-azure/media/price-calculator-menu-bar-4a43e988.png
+
+Products This is where you choose the Azure services that you want to include in your estimate. You'll likely spend most of your time here.
+
+Example scenarios Here you'll find several reference architectures, or common cloud-based solutions that you can use as a starting point.
+
+Saved estimates Here you'll find your previously saved estimates.
+
+FAQs Here you'll discover answers to frequently asked questions about the Pricing calculator.
+
+### Estimate your solution
+
+#### Add services to the estimate
+
+On the Products tab, select the service from each of these categories:
+
+    Category	Service
+
+Compute	Virtual Machines
+
+Databases	Azure SQL Database
+
+Networking	Application Gateway
+
+Scroll to the bottom of the page. Each service is listed with its default configuration.
+
+### Review, share, and save your estimate
+
+At the bottom of the page, you see the total estimated cost of running the solution. You can change the currency type if you want.
+
+At this point, you have a few options:
+
+Select Export to save your estimate as an Excel document.
+Select Save or Save as to save your estimate to the Saved Estimates tab for later.
+Select Share to generate a URL so you can share the estimate with your team.
+
+## Exercise - Compare workload costs using the TCO calculator
+
+In this exercise, you use the Total Cost of Ownership (TCO) Calculator to compare the cost of running a sample workload in your datacenter versus on Azure.
+
+Assume you're considering moving some of your on-premises workloads to the cloud. But first, you need to understand more about moving from a relatively fixed cost structure to an ongoing monthly cost structure.
+
+You'll need to investigate whether there are any potential cost savings in moving your datacenter to the cloud over the next three years. You need to take into account all of the potentially hidden costs involved with operating on-premises and in the cloud.
+
+Instead of manually collecting everything you think might be included, you use the TCO Calculator as a starting point. You adjust the provided cost assumptions to match your on-premises environment.
+
+### Recall that the TCO Calculator involves three steps:
+
+link:https://learn.microsoft.com/en-us/training/wwl-azure/describe-cost-management-azure/media/total-cost-ownership-calculator-steps-76e927a5.png
+
+#### Define your workloads
+
+1.Enter the specifications of your on-premises infrastructure into the TCO Calculator.
+2.Go to the TCO Calculator.
+3.Under Define your workloads, select Add server workload to create a row for your bank of Windows Server VMs.
+4.Select Add server workload to create a second row for your bank of Linux VMs.
+5.Under Storage, select Add storage.
+6.Under Networking, set Outbound bandwidth to 15 TB.
+7.Select Next.
+
+#### Adjust assumptions
+
+Here, you specify your currency. For brevity, you leave the remaining fields at their default values.
+
+In practice, you would adjust any cost assumptions and make any adjustments to match your current on-premises environment.
+
+    At the top of the page, select your currency. This example uses US Dollar ($).  
+    Select Next.
+
+#### View the report
+
+Take a moment to review the generated report.
+
+Remember, you've been tasked to investigate cost savings for your European datacenter over the next three years.
+
+To make these adjustments:
+
+    Set Timeframe to 3 Years.
+    Set Region to North Europe.
+
+Great work. You now have the information that you can share with your Chief Financial Officer. If you need to make adjustments, you can revisit the TCO Calculator to generate a fresh report.
 
 
 ## Describe the Microsoft Cost Management tool
