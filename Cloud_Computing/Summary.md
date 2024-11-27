@@ -22,9 +22,7 @@ for some things, the responsibility depends on the situation. If you(consumer) u
 The shared responsibility model is heavily tied into the cloud service types:
 
     1.infrastructure as a service (IaaS) most responsibility on the consumer, with the cloud provider being responsible for the basics of physical security, power, and connectivity.
-
     2.platform as a service (PaaS) being a middle ground between IaaS and SaaS, rests somewhere in the middle and evenly distributes responsibility between the cloud provider and the consumer.
-
     3.software as a service (SaaS) - SaaS places most of the responsibility with the cloud provider.
 
 As a consumer you will be responsible for:
