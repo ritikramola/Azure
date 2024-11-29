@@ -117,3 +117,32 @@ Cloud computing is the delivery of computing services over the internet by using
 2.Run your infrastructure more efficiently.
 3.Scale as your business needs change.
 
+# Benefits
+
+two of the biggest considerations are uptime (or availability) and the ability to handle demand (or scale).
+
+## High availability
+
+When you’re deploying an application, service, or any IT resources, it’s important that  the resources are available when needed. High availability focuses on ensuring maximum availability.regardless of any disruptions.
+When you’re architecting your solution, you’ll need to account for service availability guarantees,Azure provides uptime guarantees depending on the service. These guarantees are part of the service-level agreements (SLAs).
+
+## Scalability
+
+Scalability refers to the ability to adjust resources to meet demand. If you suddenly experience peak traffic and your systems are overwhelmed, the ability to scale means you can add more resources to handle the increased demand.
+The other benefit of scalability is that you aren't overpaying for services.you pay for what you use 
+
+### Scaling generally comes in two varieties
+
+**Horizontal** scaling is adding or subtracting the number of resources.
+**Vertical** scaling is focused on increasing or decreasing the capabilities of resources.
+
+
+## benefits of reliability and predictability in the cloud.
+
+Reliability is the ability of a system to recover from failures and continue to function
+
+Predictability in the cloud lets you move forward with confidence. Predictability can be focused on PERFORMANCE predictability or COST predictability.
+
+**Performance** - Performance predictability focuses on predicting the resources needed to deliver a positive experience for your customers. Autoscaling, load balancing, and high availability are just some of the cloud concepts that support performance predictability
+
+**Cost** - Cost predictability is focused on predicting or forecasting the cost of the cloud spend. With the cloud, you can track your resource use in real time.By using cloud analytics and information, you can predict future costs and adjust your resources as needed. You can even use tools like the Total Cost of Ownership (TCO) or Pricing Calculator to get an estimate of potential cloud spend.
