@@ -51,7 +51,6 @@ Cost predictability is focused on predicting or forecasting the cost of the clou
 
 ## Describe the benefits of security and governance in the cloud.
 
-
 Whether you’re deploying infrastructure as a service or software as a service, cloud features support governance and compliance. Things like set templates help ensure that all your deployed resources meet corporate standards and government regulatory requirements. Plus, you can update all your deployed resources to new standards as standards change. Cloud-based auditing helps flag any resource that’s out of compliance with your corporate standards and provides mitigation strategies. Depending on your operating model, software patches and updates may also automatically be applied, which helps with both governance and security.
 
 On the security side, you can find a cloud solution that matches your security needs. If you want maximum control of security, infrastructure as a service(IAAS) provides you with physical resources but lets you manage the operating systems and installed software, including patches and maintenance. If you want patches and maintenance taken care of automatically, platform as a service(PAAS) or software as a service(SAAS) deployments may be the best cloud strategies for you.

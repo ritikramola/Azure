@@ -146,3 +146,59 @@ Predictability in the cloud lets you move forward with confidence. Predictabilit
 **Performance** - Performance predictability focuses on predicting the resources needed to deliver a positive experience for your customers. Autoscaling, load balancing, and high availability are just some of the cloud concepts that support performance predictability
 
 **Cost** - Cost predictability is focused on predicting or forecasting the cost of the cloud spend. With the cloud, you can track your resource use in real time.By using cloud analytics and information, you can predict future costs and adjust your resources as needed. You can even use tools like the Total Cost of Ownership (TCO) or Pricing Calculator to get an estimate of potential cloud spend.
+
+## benefits of security and governance in the cloud.
+
+IAAS and PAAS both provide cloud features support governance and compliance. Things like set templates help ensure that all your deployed resources meet corporate standards and government regulatory requirements. Plus, you can update all your deployed resources to new standards as standards change.Depending on your operating model, software patches and updates may also automatically be applied, which helps with both governance and security.
+
+On the security side, you can find a cloud solution that matches your security needs. If you want maximum control of security, infrastructure as a service(IAAS) provides you with physical resources but lets you manage the operating systems and installed software, including patches and maintenance. If you want patches and maintenance taken care of automatically, platform as a service(PAAS) or software as a service(SAAS) deployments may be the best cloud strategies for you.
+
+nd because the cloud is intended as an over-the-internet delivery of IT resources, cloud providers are typically well suited to handle things like distributed denial of service (DDoS) attacks, making your network more robust and secure.
+
+## benefits of manageability in the cloud.
+
+Management of the cloud speaks to managing your cloud resources. In the cloud, you can:
+
+1.Automatically scale resource deployment based on need.
+2.Deploy resources based on a preconfigured template, removing the need for manual configuration.
+3.Monitor the health of resources and automatically replace failing resources.
+4.Receive automatic alerts based on configured metrics, so you’re aware of performance in real time.
+
+## Management in the cloud
+
+Management in the cloud speaks to how you’re able to manage your cloud environment and resources. You can manage these:
+
+1.Through a web portal.
+2.Using a command line interface.
+3.Using APIs.
+4.Using PowerShell.
+
+# Types
+
+## Infrastructure as a Service (IaaS). 
+
+Infrastructure as a service (IaaS) is the most flexible category of cloud services, as it provides you the maximum amount of control for your cloud resources.
+In an IaaS model, the cloud provider is responsible for maintaining the hardware, network connectivity (to the internet), and physical security. You’re responsible for everything else: like operating system installation, configuration, and maintenance; network configuration; database and storage configuration.
+
+IaaS places the largest share of responsibility with you. The cloud provider is responsible for maintaining the physical infrastructure and its access to the internet. You’re responsible for installation and configuration, patching and updates, and security.
+
+### Some scenerios:
+
+1.lift-and-shift migration: You’re setting up cloud resources similar to your on-prem datacenter, and then simply moving the things running on-prem to running on the IaaS infrastructure.
+
+Testing and development: You have established configurations for development and test environments that you need to rapidly replicate. You can start up or shut down the different environments rapidly with an IaaS structure, with complete control.
+
+### Use cases for IAAS
+
+Test and Development: Quickly setting up and dismantling test and development environments.
+Website Hosting: Hosting websites on IaaS is flexible and cost-effective.
+Storage, Backup, and Recovery: IaaS provides manageable, scalable storage options with a pay-as-you-go model, ideal for backup and recovery solutions.
+High-Performance Computing: By using advanced configurations, IaaS can support high-performance computing for complex tasks like simulations and analysis.
+Big Data Analysis: IaaS provides the necessary computing power and storage to perform big data analytics.
+
+## PAAS(platform as a service)
+
+Platform as a service (PaaS) is a middle ground between renting space in a datacenter (infrastructure as a service) and paying for a complete and deployed solution (software as a service). In a PaaS environment, the cloud provider maintains the physical infrastructure, physical security, and connection to the internet. They also maintain the operating systems, development tools, and business intelligence services that make up a cloud solution. In a PaaS, you don't have to worry about the licensing or patching for operating systems and databases.
+
+PaaS is well suited to provide a complete development environment without maintaining all the development infrastructure.
+
