@@ -190,15 +190,33 @@ Testing and development: You have established configurations for development and
 
 ### Use cases for IAAS
 
-Test and Development: Quickly setting up and dismantling test and development environments.
-Website Hosting: Hosting websites on IaaS is flexible and cost-effective.
-Storage, Backup, and Recovery: IaaS provides manageable, scalable storage options with a pay-as-you-go model, ideal for backup and recovery solutions.
-High-Performance Computing: By using advanced configurations, IaaS can support high-performance computing for complex tasks like simulations and analysis.
-Big Data Analysis: IaaS provides the necessary computing power and storage to perform big data analytics.
+    1 Test and Development: Quickly setting up and dismantling test and development environments.
+    2 Website Hosting: Hosting websites on IaaS is flexible and cost-effective.
+    3 Storage, Backup, and Recovery: IaaS provides manageable, scalable storage options with a pay-as-you-go model, ideal for backup and recovery solutions.
+    4 High-Performance Computing: By using advanced configurations, IaaS can support high-performance computing for complex tasks like simulations and analysis.
+    5 Big Data Analysis: IaaS provides the necessary computing power and storage to perform big data analytics.
 
 ## PAAS(platform as a service)
 
 Platform as a service (PaaS) is a middle ground between renting space in a datacenter (infrastructure as a service) and paying for a complete and deployed solution (software as a service). In a PaaS environment, the cloud provider maintains the physical infrastructure, physical security, and connection to the internet. They also maintain the operating systems, development tools, and business intelligence services that make up a cloud solution. In a PaaS, you don't have to worry about the licensing or patching for operating systems and databases.
 
-PaaS is well suited to provide a complete development environment without maintaining all the development infrastructure.
+PaaS is well suited to provide a complete development environment without maintaining all the development infrastructure. PaaS splits the responsibility between you and the cloud provider. Depending on the configuration, you or the cloud provider may be responsible for networking settings and connectivity within your cloud environment, network and application security, and the directory infrastructure.
+
+
+### Scenerio
+
+Development framework: PaaS provides a framework that developers can build upon to develop or customize cloud-based applications.PaaS lets developers create applications using built-in software components.Cloud features such as scalability, high-availability,reducing the amount of coding that developers must do.
+
+Analytics or business intelligence: Tools provided as a service with PaaS allow organizations to analyze and mine their data, finding insights and patterns and predicting outcomes to improve forecasting, product design decisions, investment returns, and other business decisions.
+
+Use Cases
+
+    1. Application Development: Streamlining the development process with a pre-configured platform, which can considerably reduce coding time.
+    2. API Development and Management: Creating and managing APIs easily without worrying about the underlying infrastructure.
+    3. Business Analytics/BI Tools: Implementing complex business analytics and intelligence solutions with built-in data storage and processing services.
+    4. Additional Features Integration: Easily integrating with additional services provided by Azure to enhance application capabilities.
+    5. Internet of Things (IoT): Developing IoT applications with built-in services designed specifically for handling and analyzing IoT data streams.
+
+
+
 
