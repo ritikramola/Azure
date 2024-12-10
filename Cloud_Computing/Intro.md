@@ -96,6 +96,7 @@ What if you’re already established with VMware in a private cloud environment 
 Here are some use cases for cloud computing:
 
 Disaster recovery
+
 Cloud infrastructure can help with data recovery and business continuity in the event of a disaster. 
 
 Storage
