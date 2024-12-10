@@ -219,4 +219,22 @@ Analytics or business intelligence: Tools provided as a service with PaaS allow 
 
 ## SAAS (Software as a service)
 
+Software as a service (SaaS) is the most complete cloud service model from a product perspective. With SaaS, you’re essentially renting or using a fully developed application. Email, financial software, messaging applications, and connectivity software. While the SaaS model may be the least flexible, it’s also the easiest to get up and running. It requires the least amount of technical knowledge or expertise to fully employ.
 
+SaaS is the model that places the most responsibility with the cloud provider and the least responsibility with the user. In a SaaS environment you’re responsible for the data that you put into the system, the devices that you allow to connect to the system, and the users that have access. Nearly everything else falls to the cloud provider.
+
+### Scenerio
+
+Some common scenarios for SaaS are:
+
+Email and messaging.
+Business productivity applications.
+Finance and expense tracking.
+
+**USE CASES**
+
+Email Services: Outsource the complexity of email service setup and administration with services like Microsoft Exchange Online.
+Collaboration and Communication: Utilize platforms like Microsoft Teams for advanced communication solutions without the complexity of in-house deployment and maintenance.
+Customer Relationship Management (CRM): Platforms like Dynamics 365 offer CRM services directly from the cloud, updated and maintained by the service provider.
+Human Resources Management (HRM): Online HRM solutions simplify the management of employee data, payroll, and recruitment processes.
+Enterprise Resource Planning (ERP): Cloud-based ERP systems can help organizations to integrate and manage finance, procurement, supply chain, and other business processes.
