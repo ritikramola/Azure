@@ -77,9 +77,13 @@ The most flexible cloud computing model, IaaS provides virtualized physical comp
 ### Appropriate Use Cases for IaaS:
 
 Test and Development: Quickly setting up and dismantling test and development environments, offering a cost-effective, scalable solution.
+
 Website Hosting: Hosting websites on IaaS can be more flexible and cost-effective than traditional web hosting.
+
 Storage, Backup, and Recovery: IaaS provides manageable, scalable storage options with a pay-as-you-go model, ideal for backup and recovery solutions.
+
 High-Performance Computing: By using advanced configurations, IaaS can support high-performance computing for complex tasks like simulations and analysis.
+
 Big Data Analysis: IaaS provides the necessary computing power and storage to perform big data analytics, which might require processing a large set of data.
 
 
@@ -90,9 +94,14 @@ PaaS delivers a framework for developers to build upon and create customized app
 ### Appropriate Use Cases for PaaS:
 
 Application Development: Streamlining the development process with a pre-configured platform, which can considerably reduce coding time.
+
 API Development and Management: Creating and managing APIs easily without worrying about the underlying infrastructure.
-Business Analytics/BI Tools: Implementing complex business analytics and intelligence solutions with built-in data storage and processing services.
+
+Business Analytics/BI Tools: Implementing complex business analytics and intelligence solutions with built-i
+n data storage and processing services.
+
 Additional Features Integration: Easily integrating with additional services provided by Azure to enhance application capabilities.
+
 Internet of Things (IoT): Developing IoT applications with built-in services designed specifically for handling and analyzing IoT data streams.
 
 
