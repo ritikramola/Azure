@@ -113,7 +113,11 @@ SaaS provides a complete software solution which consumers can purchase on a pay
 ### Appropriate Use Cases for SaaS:
 
 Email Services: Outsource the complexity of email service setup and administration with services like Microsoft Exchange Online.
+
 Collaboration and Communication: Utilize platforms like Microsoft Teams for advanced communication solutions without the complexity of in-house deployment and maintenance.
+
 Customer Relationship Management (CRM): Platforms like Dynamics 365 offer CRM services directly from the cloud, updated and maintained by the service provider.
+
 Human Resources Management (HRM): Online HRM solutions simplify the management of employee data, payroll, and recruitment processes.
+
 Enterprise Resource Planning (ERP): Cloud-based ERP systems can help organizations to integrate and manage finance, procurement, supply chain, and other business processes.
