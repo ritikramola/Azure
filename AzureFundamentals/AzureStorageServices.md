@@ -19,6 +19,7 @@ link: https://www.microsoft.com/en-us/videoplayer/embed/RE4MAbS?postJsllMsg=true
 
 
 Storage account endpoints
+
 One of the benefits of using an Azure Storage Account is having a unique namespace in Azure for your data. In order to do this, every storage account in Azure must have a unique-in-Azure account name. The combination of the account name and the Azure Storage service endpoint forms the endpoints for your storage account.
 
 When naming your storage account, keep these rules in mind:
