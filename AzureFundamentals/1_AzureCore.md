@@ -83,7 +83,7 @@ Throughout your journey with Microsoft Azure, you’ll hear and use terms like R
         the physical infrastructure, and the management infrastructure.
 
 
-1.  Physical infrastructure
+## Physical infrastructure
 
 The physical infrastructure for Azure starts with datacenters. Conceptually, the datacenters are the same as large corporate datacenters. They’re facilities with resources arranged in racks, with dedicated power, cooling, and networking infrastructure.
 
@@ -91,7 +91,7 @@ As a global cloud provider, Azure has datacenters around the world. However, the
 
 The **Global** infrastructure site gives you a chance to interactively explore the underlying Azure infrastructure.
 
-2.  Regions
+###  Regions
 
 A region is a geographical area on the planet that contains at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network. Azure intelligently assigns and controls the resources within each region to ensure workloads are appropriately balanced.
 
@@ -101,7 +101,7 @@ When you deploy a resource in Azure, you'll often need to choose the region wher
 Some services or virtual machine (VM) features are only available in certain regions, such as specific VM sizes or storage types. There are also some global Azure services that don't require you to select a particular region, such as Microsoft Entra ID, Azure Traffic Manager, and Azure DNS.
 
 
-## Describe Availability Zones.
+### Describe Availability Zones.
 
 
 Availability zones are physically separate datacenters within an Azure region. Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking. An availability zone is set up to be an isolation boundary. If one zone goes down, the other continues working. Availability zones are connected through high-speed, private fiber-optic networks.
