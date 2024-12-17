@@ -1,3 +1,5 @@
+## Topic One - Azure Core
+
 **Azure Arc** can help manage your cloud environment
 
 ## How to work in Sandbox
@@ -6,7 +8,7 @@
     2.Bash CLI
     3.Use Azure CLI interactive mode
 
-# TWO IMPORTANT PILLAR
+## TWO IMPORTANT PILLAR
 
     Physical Infrastructure pillar and Management Infrastructure pillar
 
@@ -75,3 +77,18 @@ Create additional subscriptions for resource or billing management purposes.
 ### Management Group
 
 Resources are gathered into resource groups, and resource groups are gathered into subscriptions.You organize subscriptions into containers called management groups and apply governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group.
+
+
+# Topic 2 - Services provided by Azure
+
+
+## Azure Virtual Machine
+
+With Azure Virtual Machines (VMs), you can create and use VMs in the cloud.Just like a physical computer, you can customize all of the software running on your VM.VM provides (IAAS features).
+
+You can run single VMs for testing, development, or minor tasks. Or you can group VMs together to provide high availability, scalability, and redundancy. Azure can also manage the grouping of VMs for you with features such as *scale sets* and *availability sets*.
+
+### Scale set
+Virtual machine scale sets let you create and manage a group of identical, load-balanced VMs.with virtual machine scale sets, Azure automates most of that work. Scale sets allow you to centrally manage, configure, and update a large number of VMs in minutes
+
+### Availability sets
