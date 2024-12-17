@@ -22,4 +22,37 @@ Places where atleast one or more data centers is(are) present.each region ensure
 
 #### Availability Zones.
 
-these are datacenters within **azure region**.If one zone goes down, the other continues working.
+these are datacenters within *azure region*.If one zone goes down, the other continues working.
+
+**Use of avialablity zone** 
+
+Azure can help make your app highly available through availability zones.
+You can use availability zones to run mission-critical applications and build high-availability into your application architecture by co-locating your compute, storage, networking, and data resources within an availability zone. It cost extra to duplicate data in cloud (so that it can available whenever required).
+
+Azure services that support availability zones fall into three categories:
+
+1.Zonal services: You pin the resource to a specific zone (eg:, VMs, managed disks, IP addresses).
+
+2.Zone-redundant services: The platform replicates automatically across zones (eg:zone-redundant storage,SQL Database).
+
+3.Non-regional services: Services are always available from Azure geographies and are resilient to zone-wide outages as well as region-wide outages.
+
+### Region Pairs
+
+Most Azure regions are paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away.For example, if a region in a pair was affected by a natural disaster, services would automatically fail over to the other region in its region pair.
+
+### Sovereign Pairs
+
+ Sovereign regions are instances of Azure that are isolated from the main instance of Azure. You may need to use a sovereign region for compliance or legal purposes.
+
+ ## Management Infrastructure
+
+ The management infrastructure includes Azure resources and resource groups, subscriptions, and accounts.
+
+ 1. **subscriptions** are a unit of management, billing, and scale. Similar to how resource groups are a way to logically organize resources.
+
+ 2. A subscription provides you with authenticated and authorized access to Azure products and services
+
+ 3. Azure subscription is linked to azure account using (Microsoft Entra ID or in a directory that Microsoft Entra ID trusts)
+
+ An account can have multiple subscriptions, but it’s only required to have one. In a multi-subscription account, you can use the subscriptions to configure different billing models and apply different access-management policies
