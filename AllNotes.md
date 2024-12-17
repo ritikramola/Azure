@@ -55,4 +55,19 @@ Most Azure regions are paired with another region within the same geography (suc
 
  3. Azure subscription is linked to azure account using (Microsoft Entra ID or in a directory that Microsoft Entra ID trusts)
 
- An account can have multiple subscriptions, but it’s only required to have one. In a multi-subscription account, you can use the subscriptions to configure different billing models and apply different access-management policies
+ An account can have multiple subscriptions, but it’s only required to have one. In a multi-subscription account, you can use the subscriptions to configure different billing models and apply different access-management policies.
+
+ **Billing boundary** : This subscription type determines how an Azure account is billed.
+
+ **Access control boundary** : This billing model allows you to manage and control access to the resources that users provision with specific subscriptions.
+
+ ### Create additional Azure subscriptions
+
+Create additional subscriptions for resource or billing management purposes.
+
+**Environments**: You can choose to create subscriptions to set up separate environments for development and testing, security, or to isolate data for compliance reasons.
+
+**Organizational structures**: You can create subscriptions to reflect different organizational structures. For example, you could limit one team to lower-cost resources, while allowing the IT department a full range.
+
+**Billing**: You can create additional subscriptions for billing purposes.you might want to create one subscription for your production workloads and another subscription for your development and testing workloads.
+
