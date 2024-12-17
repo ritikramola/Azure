@@ -6,11 +6,11 @@
     2.Bash CLI
     3.Use Azure CLI interactive mode
 
-## TWO IMPORTANT PILLAR
+# TWO IMPORTANT PILLAR
 
     Physical Infrastructure pillar and Management Infrastructure pillar
 
-### Physical Infrastructure Pillar
+## Physical Infrastructure Pillar
 
 1.The physical infrastructure for Azure starts with datacenters.
 
@@ -45,7 +45,7 @@ Most Azure regions are paired with another region within the same geography (suc
 
  Sovereign regions are instances of Azure that are isolated from the main instance of Azure. You may need to use a sovereign region for compliance or legal purposes.
 
- ## Management Infrastructure
+## Management Infrastructure
 
  The management infrastructure includes Azure resources and resource groups, subscriptions, and accounts.
 
@@ -71,3 +71,7 @@ Create additional subscriptions for resource or billing management purposes.
 
 **Billing**: You can create additional subscriptions for billing purposes.you might want to create one subscription for your production workloads and another subscription for your development and testing workloads.
 
+
+### Management Group
+
+Resources are gathered into resource groups, and resource groups are gathered into subscriptions.You organize subscriptions into containers called management groups and apply governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group.
