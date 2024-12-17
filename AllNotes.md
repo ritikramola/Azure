@@ -13,17 +13,14 @@
     Physical Infrastructure pillar and Management Infrastructure pillar
 
 ## Physical Infrastructure Pillar
-
 1.The physical infrastructure for Azure starts with datacenters.
 
 2.Datacenters are grouped into **Azure Regions** or **Azure Availability Zones** that are designed to help you 
 
 #### Regions
-
 Places where atleast one or more data centers is(are) present.each region ensures that workloads are appropriately balanced.
 
 #### Availability Zones.
-
 these are datacenters within *azure region*.If one zone goes down, the other continues working.
 
 **Use of avialablity zone** 
@@ -40,16 +37,13 @@ Azure services that support availability zones fall into three categories:
 3.Non-regional services: Services are always available from Azure geographies and are resilient to zone-wide outages as well as region-wide outages.
 
 ### Region Pairs
-
 Most Azure regions are paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away.For example, if a region in a pair was affected by a natural disaster, services would automatically fail over to the other region in its region pair.
 
 ### Sovereign Pairs
-
- Sovereign regions are instances of Azure that are isolated from the main instance of Azure. You may need to use a sovereign region for compliance or legal purposes.
+Sovereign regions are instances of Azure that are isolated from the main instance of Azure. You may need to use a sovereign region for compliance or legal purposes.
 
 ## Management Infrastructure
-
- The management infrastructure includes Azure resources and resource groups, subscriptions, and accounts.
+The management infrastructure includes Azure resources and resource groups, subscriptions, and accounts.
 
  1. **subscriptions** are a unit of management, billing, and scale. Similar to how resource groups are a way to logically organize resources.
 
@@ -64,7 +58,6 @@ Most Azure regions are paired with another region within the same geography (suc
  **Access control boundary** : This billing model allows you to manage and control access to the resources that users provision with specific subscriptions.
 
  ### Create additional Azure subscriptions
-
 Create additional subscriptions for resource or billing management purposes.
 
 **Environments**: You can choose to create subscriptions to set up separate environments for development and testing, security, or to isolate data for compliance reasons.
@@ -75,7 +68,6 @@ Create additional subscriptions for resource or billing management purposes.
 
 
 ### Management Group
-
 Resources are gathered into resource groups, and resource groups are gathered into subscriptions.You organize subscriptions into containers called management groups and apply governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group.
 
 
@@ -83,7 +75,6 @@ Resources are gathered into resource groups, and resource groups are gathered in
 
 
 ## Azure Virtual Machine
-
 With Azure Virtual Machines (VMs), you can create and use VMs in the cloud.Just like a physical computer, you can customize all of the software running on your VM.VM provides (IAAS features).
 
 You can run single VMs for testing, development, or minor tasks. Or you can group VMs together to provide high availability, scalability, and redundancy. Azure can also manage the grouping of VMs for you with features such as *scale sets* and *availability sets*.
@@ -92,3 +83,19 @@ You can run single VMs for testing, development, or minor tasks. Or you can grou
 Virtual machine scale sets let you create and manage a group of identical, load-balanced VMs.with virtual machine scale sets, Azure automates most of that work. Scale sets allow you to centrally manage, configure, and update a large number of VMs in minutes
 
 ### Availability sets
+Availability sets are designed to ensure that VMs stagger updates and have varied power and network connectivity, preventing you from losing all your VMs with a single network or power failure.
+
+Availability accomplish these objectives by grouping VMs in two ways: 
+         update domain and fault domain.
+
+**Update Domain**:This setup allows you to apply updates while knowing that only one update domain grouping is offline at a time.
+
+**Fault domain**:an availability set splits your VMs across up to three fault domains. This helps protect against a physical power or networking failure by having VMs in different fault domains.
+
+Some common examples or use cases for virtual machines include:
+            During testing and development.
+            When running applications in the cloud
+            When extending your datacenter to the cloud
+            During disaster recovery
+        
+    

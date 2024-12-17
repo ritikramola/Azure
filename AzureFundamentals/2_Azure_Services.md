@@ -71,13 +71,7 @@ When you provision a VM, you’ll also have the chance to pick the resources tha
 
 1.From Cloud Shell, run the following az vm create command to create a Linux VM:
 
-        az vm create \
-                --resource-group "[sandbox resource group name]" \
-                --name my-vm \
-                --public-ip-sku Standard \
-                --image Ubuntu2204 \
-                --admin-username azureuser \
-                --generate-ssh-keys   
+        az vm create \--resource-group "[sandbox resource group name]" \--name my-vm \--public-ip-sku Standard \--image Ubuntu2204 \--admin-username azureuser \--generate-ssh-keys   
 
 
 2.Run the following az vm extension set command to configure Nginx on your VM:
