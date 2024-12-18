@@ -264,7 +264,6 @@ Azure App Service is a robust hosting option that you can use to host your apps 
 
 Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. It supports multiple languages, including .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. It also supports both Windows and Linux environments.
 
-
 #### Types of app services
 
 With App Service, you can host most common app service styles like:
@@ -273,15 +272,15 @@ With App Service, you can host most common app service styles like:
 
 App Service includes full support for hosting web apps by using ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python. You can choose either Windows or Linux as the host operating system.
 
-1/1  API apps
+2  API apps
 
 Much like hosting a website, you can build REST-based web APIs by using your choice of language and framework. You get full Swagger support and the ability to package and publish your API in Azure Marketplace. The produced apps can be consumed from any HTTP- or HTTPS-based client.
 
-1/1/1  WebJobs
+3  WebJobs
 
 You can use the WebJobs feature to run a program (.exe, Java, PHP, Python, or Node.js) or script (.cmd, .bat, PowerShell, or Bash) in the same context as a web app, API app, or mobile app. They can be scheduled or run by a trigger. WebJobs are often used to run background tasks as part of your application logic.
 
-1/1/1/1  Mobile apps
+4  Mobile apps
 
 Use the Mobile Apps feature of App Service to quickly build a back end for iOS and Android apps. With just a few actions in the Azure portal, you can:
 
@@ -313,7 +312,6 @@ Azure virtual networks provide the following key networking capabilities:
 Azure virtual network allows you to create multiple isolated virtual networks. When you set up a virtual network, you define a private IP address space by using either public or private IP address ranges. The IP range only exists within the virtual network and isn't internet routable. You can divide that IP address space into subnets and allocate part of the defined address space to each named subnet.
 
 For name resolution, you can use the name resolution service built into Azure. You also can configure the virtual network to use either an internal or an external DNS server.
-
 
 ### Internet communications
 
