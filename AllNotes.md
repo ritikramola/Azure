@@ -143,6 +143,28 @@ Functions can be either stateless or stateful. When they're stateless (the defau
 
 Functions are a key component of serverless computing. They're also a general compute platform for running any type of code. This flexibility allows you to manage scaling, run on virtual networks, and even completely isolate the functions.
 
+#### Describe application hosting options
+ Both VMs and containers provide excellent hosting solutions. VMs give you maximum control of the hosting environment and let u to configure it exactly how you want. Containers, with the ability to isolate and individually manage different aspects of the hosting solution, can also be a robust and compelling option.
 
+### Azure App Service
 
+App Service enables you to build and host web apps, background jobs, mobile back-ends, and RESTful APIs in the programming language of your choice without managing infrastructure. It offers automatic scaling and high availability.
 
+Azure App Service lets you focus on building and maintaining your app, and Azure focuses on keeping the environment up and running.
+
+#### Types of app services
+1. **Web apps**
+App Service includes full support for hosting web apps by using ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python. You can choose either Windows or Linux as the host operating system.
+
+2  **API apps**
+Much like hosting a website, you can build REST-based web APIs by using your choice of language and framework. You get full Swagger support and the ability to package and publish your API in Azure Marketplace.
+
+3  **WebJobs**
+
+You can use the WebJobs feature to run a program (.exe, Java, PHP, Python, or Node.js) or script (.cmd, .bat, PowerShell, or Bash) in the same context as a web app, API app, or mobile app. WebJobs are often used to run background tasks as part of your application logic.
+
+4  **Mobile apps**
+Use the Mobile Apps feature of App Service to quickly build a back end for iOS and Android apps.
+
+### Describe Azure virtual networking
+Azure virtual networks and virtual subnets enable Azure resources, such as VMs, web apps, and databases, to communicate with each other, with users on the internet, and with your on-premises client computers.
