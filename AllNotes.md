@@ -98,4 +98,32 @@ Some common examples or use cases for virtual machines include:
             When extending your datacenter to the cloud
             During disaster recovery
         
-    
+### Azure virtual desktop  
+Azure Virtual Desktop is a desktop and application virtualization service that runs on the cloud. It enables you to use a cloud-hosted version of Windows from any location.
+
+**Enhance security**: With Azure Virtual Desktop, the data and apps are separated from the local hardware. The actual desktop and apps are running in the cloud, meaning the risk of confidential data being left on a personal device is reduced.
+
+**Multi session windows**
+Azure Virtual Desktop also provides a more consistent experience with broader application support compared to Windows Server-based operating systems.
+
+**NOTE**
+While virtual machines are an excellent way to reduce costs versus the investments that are necessary for physical hardware, they're still limited to a single operating system per virtual machine.
+
+### Azure Containers
+If you want to run multiple instances of an application on a single host machine, containers are an excellent choice.
+
+**What are containers?** ->Containers are a virtualization environment. Much like running multiple virtual machines on a single physical host, you can run multiple containers on a single physical or virtual host.Containers are lightweight and designed to be created, scaled out, and stopped dynamically.ontainers are designed to allow you to respond to changes on demand. With containers, you can quickly restart if there's a crash or hardware interruption.
+Example of Container is *Docker*.
+
+#### Azure Container Instance
+Azure Container Instances offer the fastest and simplest way to run a container in Azure.these are based on (PAAS).Azure Container Instances allow you to upload your containers and then the service runs the containers for you.
+
+#### Azure Container Apps
+Azure Container Apps are similar to container instance.ontainer Apps have extra benefits such as the ability to incorporate load balancing and scaling
+
+#### Azure Kubernetes Service
+Azure Kubernetes Service (AKS) is a container orchestration service. An orchestration service manages the lifecycle of containers. When you're deploying a fleet of containers, AKS can make fleet management simpler and more efficient.
+
+
+
+
