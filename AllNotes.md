@@ -119,10 +119,29 @@ Example of Container is *Docker*.
 Azure Container Instances offer the fastest and simplest way to run a container in Azure.these are based on (PAAS).Azure Container Instances allow you to upload your containers and then the service runs the containers for you.
 
 #### Azure Container Apps
-Azure Container Apps are similar to container instance.ontainer Apps have extra benefits such as the ability to incorporate load balancing and scaling
+Azure Container Apps are similar to container instance. Container Apps have extra benefits such as the ability to incorporate load balancing and scaling.
 
 #### Azure Kubernetes Service
 Azure Kubernetes Service (AKS) is a container orchestration service. An orchestration service manages the lifecycle of containers. When you're deploying a fleet of containers, AKS can make fleet management simpler and more efficient.
+
+#### Using containers in your solution
+you might split a website into a container hosting your front end, another hosting your back end, and a third for storage. This split allows you to separate portions of your app into logical sections that can be maintained, scaled, or updated independently.
+
+#### Azure function
+Azure Functions is an event-driven, serverless compute option that doesn’t require maintaining virtual machines or containers. If you build an app using VMs or containers, those resources have to be “running” in order for your app to function.
+
+#### Benefits of Azure Functions
+Using Azure Functions is ideal when you're only concerned about the code running your service and not about the underlying platform or infrastructure. 
+
+Functions are commonly used when you need to perform work in response to an event (often via a REST request), timer, or message from another Azure service, and when that work can be completed quickly, within seconds or less.
+
+Functions scale automatically based on demand.
+
+Azure Functions runs your code when it triggers and automatically deallocates resources when the function is finished.
+
+Functions can be either stateless or stateful. When they're stateless (the default), they behave as if they restart every time they respond to an event. When they're stateful (called Durable Functions), a context is passed through the function to track prior activity.
+
+Functions are a key component of serverless computing. They're also a general compute platform for running any type of code. This flexibility allows you to manage scaling, run on virtual networks, and even completely isolate the functions.
 
 
 
