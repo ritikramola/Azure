@@ -331,9 +331,7 @@ Azure virtual networks enable you to link resources together in your on-premises
 
 3. Azure ExpressRoute provides a dedicated private connectivity to Azure that doesn't travel over the internet. ExpressRoute is useful for environments where you need greater bandwidth and even higher levels of security.
 
-
 ### Route network traffic
-
 By default, Azure routes traffic between subnets on any connected virtual networks, on-premises networks, and the internet. You also can control routing and override those settings, as follows:
 
 1. Route tables allow you to define rules about how traffic should be directed. You can create custom route tables that control how packets are routed between subnets.
