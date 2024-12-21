@@ -239,5 +239,64 @@ If you’re configuring a VPN to keep your information safe, you also want to be
 *Active/standby*
 By default, VPN gateways are deployed as two instances in an active/standby configuration, even if you only see one VPN gateway resource in Azure. When planned maintenance or unplanned disruption affects the active instance, the standby instance automatically assumes responsibility for connections without any user intervention.typically restore within a few seconds for planned maintenance and within 90 seconds for unplanned disruptions.
 
-*Actuve/Active*
+*Active/Active*
 In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an additional VPN device on-premises.
+
+*ExpressRoute failover*
+Another high-availability option is to configure a VPN gateway as a secure failover path for ExpressRoute connections. In high-availability scenarios, where there's risk associated with an outage of an ExpressRoute circuit, you can also provision a VPN gateway that uses the internet as an alternative method of connectivity.
+
+*Zone-redundant gateways*
+In regions that support availability zones, VPN gateways and ExpressRoute gateways can be deployed in a zone-redundant configuration. This configuration brings resiliency, scalability, and higher availability to virtual network gateways. 
+These gateways require different gateway stock keeping units (SKUs) and use Standard public IP addresses instead of Basic public IP addresses.
+
+## Describe Azure ExpressRoute
+Azure ExpressRoute lets you extend your on-premises networks into the Microsoft cloud over a private connection, with the help of a connectivity provider. This connection is called an ExpressRoute Circuit.  Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. ExpressRoute connections don't go over the public Internet. This setup allows ExpressRoute connections to offer more reliability, faster speeds, consistent latencies, and higher security than typical connections over the Internet.
+
+### Features and benefits of ExpressRoute
+
+There are several benefits to using ExpressRoute as the connection service between Azure and on-premises networks.
+
+1.Connectivity to Microsoft cloud services across all regions in the geopolitical region.
+            Microsoft Office 365
+            Microsoft Dynamics 365
+            Azure compute services, such as Azure Virtual Machines
+            Azure cloud services, such as Azure Cosmos DB and Azure Storage
+
+2.Global connectivity to Microsoft services across all regions with the ExpressRoute Global Reach.
+
+You can enable ExpressRoute Global Reach to exchange data across your on-premises sites by connecting your ExpressRoute circuits. For example, say you had an office in Asia and a datacenter in Europe, both with ExpressRoute circuits connecting them to the Microsoft network.
+
+3.Dynamic routing between your network and Microsoft via Border Gateway Protocol (BGP).
+
+ExpressRoute uses the BGP. BGP is used to exchange routes between on-premises networks and resources running in Azure. This protocol enables dynamic routing between your on-premises network and services running in the Microsoft cloud.
+
+4.Built-in redundancy in every peering location for higher reliability.
+
+Each connectivity provider uses redundant devices to ensure that connections established with Microsoft are highly available. You can configure multiple circuits to complement this feature.
+
+### ExpressRoute connectivity models
+
+ExpressRoute supports four models that you can use to connect your on-premises network to the Microsoft cloud:
+
+                CloudExchange colocation
+                Point-to-point Ethernet connection
+                Any-to-any connection
+                Directly from ExpressRoute sites
+
+1.CloudExchange colocation
+
+Colocation refers to your datacenter, office, or other facility being physically colocated at a cloud exchange, such as an ISP. If your facility is colocated at a cloud exchange, you can request a virtual cross-connect to the Microsoft cloud.
+
+2.Point-to-point Ethernet connection
+
+Point-to-point ethernet connection refers to using a point-to-point connection to connect your facility to the Microsoft cloud.
+
+3.Any-to-any connection
+
+With any-to-any connectivity, you can integrate your wide area network (WAN) with Azure by providing connections to your offices and datacenters. Azure integrates with your WAN connection to provide a connection like you would have between your datacenter and any branch offices.
+
+4.Directly from ExpressRoute sites
+
+
+
+
