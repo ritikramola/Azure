@@ -206,3 +206,38 @@ Azure virtual networks enable you to filter traffic between subnets by using the
 1. Network security groups are Azure resources that can contain multiple inbound and outbound security rules. You can define these rules to allow or block traffic, based on factors such as source and destination IP address, port, and protocol.
 
 2. Network virtual appliances are specialized VMs that can be compared to a hardened network appliance. A network virtual appliance carries out a particular network function, such as running a firewall or performing wide area network (WAN) optimization.
+
+*Connect virtual networks*
+You can link virtual networks together by using virtual network **peering**. Peering allows two virtual networks to connect directly to each other. Peering enables resources in each virtual network to communicate with each other. These virtual networks can be in separate regions.
+
+**User-defined routes** (UDR) allow you to control the routing tables between subnets within a virtual network or between virtual networks.
+
+**Note**
+Azure virtual networking supports both public(have public Ip address and can be accessed from anywhere in the world.) and private(Have private IP address and can be accessed from within the address space of that virtual network.) endpoints to enable communication between external or internal resources with other internal resources.
+
+## Describe Azure virtual private networks
+A virtual private network (VPN) uses an encrypted tunnel within another network. VPNs are typically deployed to connect two or more trusted private networks to one another over an untrusted network (typically the public internet). Traffic is encrypted while traveling over the untrusted network to prevent eavesdropping or other attacks.
+
+### VPN gateways
+A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances are deployed in a dedicated subnet of the virtual network and enable the following connectivity:
+
+1.Connect on-premises datacenters to virtual networks through a site-to-site connection.
+
+2.Connect individual devices to virtual networks through a point-to-site connection.
+
+3.Connect virtual networks to other virtual networks through a network-to-network connection.
+
+All data transfer is encrypted inside a private tunnel as it crosses the internet. You can deploy only one VPN gateway in each virtual network.When setting up a VPN gateway, you must specify the type of VPN - either policy-based or route-based.
+
+1.Policy-based VPN gateways specify statically the IP address of packets that should be encrypted through each tunnel.
+
+2.In Route-based gateways, IPSec tunnels are modeled as a network interface or virtual tunnel interface. IP routing (either static routes or dynamic routing protocols) decides which one of these tunnel interfaces to use when sending each packet. Route-based VPNs are the preferred connection method for on-premises devices
+
+### High-availability scenarios
+If you’re configuring a VPN to keep your information safe, you also want to be sure that it’s a highly available and fault tolerant VPN configuration.
+
+*Active/standby*
+By default, VPN gateways are deployed as two instances in an active/standby configuration, even if you only see one VPN gateway resource in Azure. When planned maintenance or unplanned disruption affects the active instance, the standby instance automatically assumes responsibility for connections without any user intervention.typically restore within a few seconds for planned maintenance and within 90 seconds for unplanned disruptions.
+
+*Actuve/Active*
+In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an additional VPN device on-premises.

@@ -18,7 +18,6 @@ That OpEx cost can be impacted by many factors. Some of the impacting factors ar
     Azure Marketplace
 
 ### Resource type
-
 A number of factors influence the cost of Azure resources. The type of resources, the settings for the resource, and the Azure region will all have an impact on how much a resource costs. When you provision an Azure resource, Azure creates metered instances for that resource. The meters track the resources' usage and generate a usage record that is used to calculate your bill.
 
 **Example**
