@@ -334,3 +334,21 @@ Azure DNS also supports private DNS domains. This feature allows you to use your
 
 #### Alias records
 Azure DNS also supports alias record sets. You can use an alias record set to refer to an Azure resource, such as an Azure public IP address, an Azure Traffic Manager profile, or an Azure Content Delivery Network (CDN) endpoint. If the IP address of the underlying resource changes, the alias record set seamlessly updates itself during DNS resolution. The alias record set points to the service instance, and the service instance is associated with an IP address.
+
+
+# Topic 3 - Azure Storage services
+storage account provides a unique namespace for your Azure Storage data that's accessible from anywhere in the world over HTTP or HTTPS. Data in this account is secure, highly available, durable, and massively scalable.
+
+ When you create your storage account, you’ll start by picking the storage account type. Below is a list of redundancy options that will be covered later in this module:
+
+        Locally redundant storage (LRS)
+        Geo-redundant storage (GRS)
+        Read-access geo-redundant storage (RA-GRS)
+        Zone-redundant storage (ZRS)
+        Geo-zone-redundant storage (GZRS)
+        Read-access geo-zone-redundant storage (RA-GZRS)
+
+**Storage account endpoints**
+One of the benefits of using an Azure Storage Account is having a unique namespace in Azure for your data. The combination of the account name and the Azure Storage service endpoint forms the endpoints for your storage account.
+
+
