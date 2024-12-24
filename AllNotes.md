@@ -386,4 +386,25 @@ GRS copies your data synchronously three times within a single physical location
 GZRS combines the high availability provided by redundancy across availability zones with protection from regional outages provided by geo-replication. Data in a GZRS storage account is copied across three Azure availability zones in the primary region (similar to ZRS) and is also replicated to a secondary geographic region, using LRS, for protection from regional disasters. Microsoft recommends using GZRS for applications requiring maximum consistency, durability, and availability, excellent performance, and resilience for disaster recovery.
 GZRS is designed to provide at least 16 nines (99.99999999999999%) of durability of objects over a given year.
 
+## Describe Azure storage services
+The Azure Storage platform includes the following data services:
+
+                Azure Blobs: A massively scalable object store for text and binary data. Also includes support for big data analytics through Data Lake Storage Gen2.
+                Azure Files: Managed file shares for cloud or on-premises deployments.
+                Azure Queues: A messaging store for reliable messaging between application components.
+                Azure Disks: Block-level storage volumes for Azure VMs.
+                Azure Tables: NoSQL table option for structured, non-relational data.
+
+### Benefits of Azure Storage
+Azure Storage services offer the following benefits for application developers and IT professionals:
+
+1. Durable and highly available. Redundancy ensures that your data is safe if transient hardware failures occur. You can also opt to replicate data across data centers or geographical regions for additional protection from local catastrophes or natural disasters. 
+
+2. Secure. All data written to an Azure storage account is encrypted by the service. Azure Storage provides you with fine-grained control over who has access to your data.
+
+3. Scalable. Azure Storage is designed to be massively scalable to meet the data storage and performance needs of today's applications.
+
+4. Managed. Azure handles hardware maintenance, updates, and critical issues for you.
+
+5. Accessible. Data in Azure Storage is accessible from anywhere in the world over HTTP or HTTPS. Microsoft provides client libraries for Azure Storage in a variety of languages, including .NET, Java, Node.js, Python, PHP, Ruby, Go, and others, as well as a mature REST API. Azure Storage supports scripting in Azure PowerShell or Azure CLI. And the Azure portal and Azure Storage Explorer offer easy visual solutions for working with your data.
 
