@@ -87,7 +87,6 @@ Azure Storage offers two options for copying your data to a secondary region: ge
 By default, data in the secondary region isn't available for read or write access unless there's a failover to the secondary region. If the primary region becomes unavailable, you can choose to fail over to the secondary region. After the failover has completed, the secondary region becomes the primary region, and you can again read and write data.
 
 #### Geo-redundant storage
-
 GRS copies your data synchronously three times within a single physical location in the primary region using LRS. It then copies your data asynchronously to a single physical location in the secondary region (the region pair) using LRS. GRS offers durability for Azure Storage data objects of at least 16 nines (99.99999999999999%) over a given year.
 
 Diagram showing GRS, with primary region LRS replicating data to LRS in a second region.
@@ -96,7 +95,6 @@ link:https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-storage
 
 
 #### Geo-zone-redundant storage
-
 GZRS combines the high availability provided by redundancy across availability zones with protection from regional outages provided by geo-replication. Data in a GZRS storage account is copied across three Azure availability zones in the primary region (similar to ZRS) and is also replicated to a secondary geographic region, using LRS, for protection from regional disasters. Microsoft recommends using GZRS for applications requiring maximum consistency, durability, and availability, excellent performance, and resilience for disaster recovery.
 
 Diagram showing GZRS, with primary region ZRS replicating data to LRS in a second region.
@@ -107,16 +105,13 @@ link : https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-stora
 GZRS is designed to provide at least 16 nines (99.99999999999999%) of durability of objects over a given year.
 
 ## Read access to data in the secondary region
-
 Geo-redundant storage (with GRS or GZRS) replicates your data to another physical location in the secondary region to protect against regional outages. However, that data is available to be read only if the customer or Microsoft initiates a failover from the primary to secondary region. However, if you enable read access to the secondary region, your data is always available, even when the primary region is running optimally. For read access to the secondary region, enable read-access geo-redundant storage (RA-GRS) or read-access geo-zone-redundant storage (RA-GZRS).
 
  Important
 
 Remember that the data in your secondary region may not be up-to-date due to RPO.
 
-
 ## Describe Azure storage services
-
 The Azure Storage platform includes the following data services:
 
                 Azure Blobs: A massively scalable object store for text and binary data. Also includes support for big data analytics through Data Lake Storage Gen2.
