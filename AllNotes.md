@@ -339,7 +339,7 @@ Azure DNS also supports alias record sets. You can use an alias record set to re
 # Topic 3 - Azure Storage services
 storage account provides a unique namespace for your Azure Storage data that's accessible from anywhere in the world over HTTP or HTTPS. Data in this account is secure, highly available, durable, and massively scalable.
 
- When you create your storage account, you’ll start by picking the storage account type. Below is a list of redundancy options that will be covered later in this module:
+ When you create your storage account, you'll start by picking the storage account type. Below is a list of redundancy options that will be covered later in this module:
 
         Locally redundant storage (LRS)
         Geo-redundant storage (GRS)
@@ -353,3 +353,26 @@ One of the benefits of using an Azure Storage Account is having a unique namespa
 
 
 ## Describe Azure storage redundancy
+
+Azure Storage always stores multiple copies of your data so that it's protected from planned and unplanned events such as transient hardware failures, network or power outages, and natural disasters.The factors that help determine which redundancy option you should choose include:
+
+        How your data is replicated in the primary region.
+        Whether your data is replicated to a second region that is geographically distant to the primary region, to protect against regional disasters.
+        Whether your application requires read access to the replicated data in the secondary region if the primary region becomes unavailable.
+
+### Redundancy in the primary region
+Data in an Azure Storage account is always replicated three times in the primary region. Azure Storage offers two options for how your data is replicated in the primary region, locally redundant storage (LRS) and zone-redundant storage (ZRS).
+
+**Locally redundant storage**
+Locally redundant storage (LRS) replicates your data three times within a single data center in the primary region. LRS provides at least 11 nines of durability (99.999999999%) of objects over a given year.
+
+LRS is the lowest-cost redundancy option and offers the least durability compared to other options. LRS protects your data against server rack and drive failures. However, if a disaster such as fire or flooding occurs within the data center, all replicas of a storage account using LRS may be lost or unrecoverable.
+
+**Zone-redundant storage**
+For Availability Zone-enabled Regions, zone-redundant storage (ZRS) replicates your Azure Storage data synchronously across three Azure availability zones in the primary region. ZRS offers durability for Azure Storage data objects of at least 12 nines (99.9999999999%) over a given year.
+
+With ZRS, your data is still accessible for both read and write operations even if a zone becomes unavailable. No remounting of Azure file shares from the connected clients is required. If a zone becomes unavailable, Azure undertakes networking updates, such as DNS repointing. These updates may affect your application if you access data before the updates have completed.
+
+Microsoft recommends using ZRS in the primary region for scenarios that require high availability. ZRS is also recommended for restricting replication of data within a country or region to meet data governance requirements.
+
+
