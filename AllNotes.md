@@ -408,3 +408,33 @@ Azure Storage services offer the following benefits for application developers a
 
 5. Accessible. Data in Azure Storage is accessible from anywhere in the world over HTTP or HTTPS. Microsoft provides client libraries for Azure Storage in a variety of languages, including .NET, Java, Node.js, Python, PHP, Ruby, Go, and others, as well as a mature REST API. Azure Storage supports scripting in Azure PowerShell or Azure CLI. And the Azure portal and Azure Storage Explorer offer easy visual solutions for working with your data.
 
+#### Azure Blobs
+Azure Blob storage is an object storage solution for the cloud. It can store massive amounts of data, such as text or binary data. Azure Blob storage is unstructured, meaning that there are no restrictions on the kinds of data it can hold.One advantage of blob storage over disk storage is that it doesn't require developers to think about or manage disks.
+
+Blob storage is ideal for:
+
+                Serving images or documents directly to a browser.
+                Storing files for distributed access.
+                Streaming video and audio.
+                Storing data for backup and restore, disaster recovery, and archiving.
+                Storing data for analysis by an on-premises or Azure-hosted service.
+
+**Accessing blob storage**
+Objects in blob storage can be accessed from anywhere in the world via HTTP or HTTPS. Users or client applications can access blobs via URLs, the Azure Storage REST API, Azure PowerShell, Azure CLI, or an Azure Storage client library.
+
+
+#### Blob storage tiers
+Data stored in the cloud can grow at an exponential pace. To manage costs for your expanding storage needs, it's helpful to organize your data based on attributes like frequency of access and planned retention period. Data stored in the cloud can be handled differently based on how it's generated, processed, and accessed over its lifetime.
+To accommodate these different access needs, Azure provides several access tiers, which you can use to balance your storage costs with your access needs.Azure Storage offers different access tiers for your blob storage, helping you store object data in the most cost-effective manner.
+
+1.*Hot access tier*: Optimized for storing data that is accessed frequently (for example, images for your website).
+
+2. *Cool access tier*: Optimized for data that is infrequently accessed and stored for at least 30 days (for example, invoices for your customers).
+
+3. *Cold access tier*: Optimized for storing data that is infrequently accessed and stored for at least 90 days.
+
+4. *Archive access tier*: Appropriate for data that is rarely accessed and stored for at least 180 days, with flexible latency requirements (for example, long-term backups).
+
+### Azure Files
+Azure File storage offers fully managed file shares in the cloud that are accessible via the industry standard *Server Message Block* (SMB) or *Network File System* (NFS) protocols. Azure Files file shares can be mounted concurrently by cloud or on-premises deployments. SMB Azure file shares are accessible from Windows, Linux, and macOS clients. NFS Azure Files shares are accessible from Linux or macOS clients. 
+
