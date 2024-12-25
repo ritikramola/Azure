@@ -438,3 +438,7 @@ To accommodate these different access needs, Azure provides several access tiers
 ### Azure Files
 Azure File storage offers fully managed file shares in the cloud that are accessible via the industry standard *Server Message Block* (SMB) or *Network File System* (NFS) protocols. Azure Files file shares can be mounted concurrently by cloud or on-premises deployments. SMB Azure file shares are accessible from Windows, Linux, and macOS clients. NFS Azure Files shares are accessible from Linux or macOS clients. 
 
+Azure Files key benefits:
+
+1. Shared access: Azure file shares support the industry standard SMB and NFS protocols, meaning you can seamlessly replace your on-premises file shares with Azure file shares without worrying about application compatibility.
+
