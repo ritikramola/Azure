@@ -458,3 +458,18 @@ Azure Disk storage, or Azure managed disks, are block-level storage volumes mana
 
 ### Azure Tables
 Azure Table storage stores large amounts of structured data. Azure tables are a NoSQL datastore that accepts authenticated calls from inside and outside the Azure cloud. This enables you to use Azure tables to build your hybrid or multicloud solution and have your data always available. Azure tables are ideal for storing structured, non-relational data.
+
+## Identify Azure data migration options
+Azure supports both real-time migration of infrastructure, applications, and data using Azure Migrate as well as asynchronous migration of data using Azure Data Box.
+
+### Azure Migrate
+Azure Migrate is a service that helps you migrate from an on-premises environment to the cloud. Azure Migrate functions as a hub to help you manage the assessment and migration of your on-premises datacenter to Azure. It provides the following:
+
+1.Unified migration platform: A single portal to start, run, and track your migration to Azure.
+
+2.Range of tools: A range of tools for assessment and migration. Azure Migrate tools include Azure Migrate: Discovery and assessment and Azure Migrate: Server Migration. Azure Migrate also integrates with other Azure services and tools, and with independent software vendor (ISV) offerings.
+
+3.Assessment and migration: In the Azure Migrate hub, you can assess and migrate your on-premises infrastructure to Azure.
+
+#### Integrated tools
+In addition to working with tools from ISVs, the Azure Migrate hub also includes the following tools to help with migration:

@@ -271,7 +271,6 @@ Server Migration. Azure Migrate also integrates with other Azure services and to
 3.Assessment and migration: In the Azure Migrate hub, you can assess and migrate your on-premises infrastructure to Azure.
 
 #### Integrated tools
-
 In addition to working with tools from ISVs, the Azure Migrate hub also includes the following tools to help with migration:
 
 1.Azure Migrate: Discovery and assessment. Discover and assess on-premises servers running on VMware, Hyper-V, and physical servers in preparation for migration to Azure.
@@ -311,25 +310,19 @@ Here are the various scenarios where Data Box can be used to export data from Az
 
 Once the data from your import order is uploaded to Azure, the disks on the device are wiped clean in accordance with NIST 800-88r1 standards. For an export order, the disks are erased once the device reaches the Azure datacenter.
 
-
 ## Identify Azure file movement options
-
 In addition to large scale migration using services like Azure Migrate and Azure Data Box, Azure also has tools designed to help you move or interact with individual files or small file groups. Among those tools are AzCopy, Azure Storage Explorer, and Azure File Sync.
 
 ### AzCopy
-
 AzCopy is a command-line utility that you can use to copy blobs or files to or from your storage account. With AzCopy, you can upload files, download files, copy files between storage accounts, and even synchronize files. AzCopy can even be configured to work with other cloud providers to help move files back and forth between clouds.
 
  **Important**
 Synchronizing blobs or files with AzCopy is one-direction synchronization. When you synchronize, you designated the source and destination, and AzCopy will copy files or blobs in that direction. It doesn't synchronize bi-directionally based on timestamps or other metadata.
 
 ### Azure Storage Explorer
-
 Azure Storage Explorer is a standalone app that provides a graphical interface to manage files and blobs in your Azure Storage Account. It works on Windows, macOS, and Linux operating systems and uses AzCopy on the backend to perform all of the file and blob management tasks. With Storage Explorer, you can upload to Azure, download from Azure, or move between storage accounts.
 
-
 ### Azure File Sync
-
 Azure File Sync is a tool that lets you centralize your file shares in Azure Files and keep the flexibility, performance, and compatibility of a Windows file server. It’s almost like turning your Windows file server into a miniature content delivery network. Once you install Azure File Sync on your local Windows server, it will automatically stay bi-directionally synced with your files in Azure.
 
 With Azure File Sync, you can:
