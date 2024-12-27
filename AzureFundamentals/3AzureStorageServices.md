@@ -332,3 +332,4 @@ With Azure File Sync, you can:
         Replace a failed local server by installing Azure File Sync on a new server in the same datacenter.
         Configure cloud tiering so the most frequently accessed files are replicated locally, while infrequently accessed files are kept in the cloud until requested.
 
+

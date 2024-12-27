@@ -473,3 +473,49 @@ Azure Migrate is a service that helps you migrate from an on-premises environmen
 
 #### Integrated tools
 In addition to working with tools from ISVs, the Azure Migrate hub also includes the following tools to help with migration:
+
+1.Azure Migrate: Discovery and assessment. Discover and assess on-premises servers running on VMware, Hyper-V, and physical servers in preparation for migration to Azure.
+
+2.Azure Migrate: Server Migration. Migrate VMware VMs, Hyper-V VMs, physical servers, other virtualized servers, and public cloud VMs to Azure.
+
+3.Data Migration Assistant. Data Migration Assistant is a stand-alone tool to assess SQL Servers. It helps pinpoint potential problems blocking migration. It identifies unsupported features, new features that can benefit you after migration, and the right path for database migration.
+
+4.Azure Database Migration Service. Migrate on-premises databases to Azure VMs running SQL Server, Azure SQL Database, or SQL Managed Instances.
+
+5.Azure App Service migration assistant. It is a standalone tool to assess on-premises websites for migration to Azure App Service. Use Migration Assistant to migrate .NET and PHP web apps to Azure.
+
+6.Azure Data Box. Use Azure Data Box products to move large amounts of offline data to Azure.
+
+
+### Azure Data Box
+Azure Data Box is a physical migration service that helps transfer large amounts of data in a quick, inexpensive, and reliable way. The secure data transfer is accelerated by shipping you a proprietary Data Box storage device that has a maximum usable storage capacity of 80 terabytes. The Data Box is transported to and from your datacenter via a regional carrier.
+
+#### Use cases
+Data Box is ideally suited to transfer data sizes larger than 40 TBs in scenarios with no to limited network connectivity. The data movement can be one-time, periodic, or an initial bulk data transfer followed by periodic transfers.
+
+Here are the various scenarios where Data Box can be used to import data to Azure.
+
+        Onetime migration - when a large amount of on-premises data is moved to Azure.
+        Moving a media library from offline tapes into Azure.
+        Migrating your VM farm, SQL server, and applications to Azure.
+        Moving historical data to Azure for in-depth analysis and reporting using HDInsight.
+        Initial bulk transfer - when an initial bulk transfer is done using Data Box (seed) followed by incremental transfers over the network.
+        Periodic uploads - when large amount of data is generated periodically and needs to be moved to Azure.
+
+Here are the various scenarios where Data Box can be used to export data from Azure.
+
+        Disaster recovery - when a copy of the data from Azure is restored to an on-premises network. In a typical disaster recovery scenario, a large amount of Azure data is exported to a Data Box. Microsoft then ships this Data Box, and the data is restored on your premises in a short time.
+        Security requirements - when you need to be able to export data out of Azure due to government or security requirements.
+        Migrate back to on-premises or to another cloud service provider - when you want to move all the data back to on-premises, or to another cloud service provider, export data via Data Box to migrate the workloads.
+
+## Identify Azure file movement options
+ Azure also has tools designed to help you move or interact with individual files or small file groups. Among those tools are AzCopy, Azure Storage Explorer, and Azure File Sync.
+
+### AzCopy
+AzCopy is a command-line utility that you can use to copy blobs or files to or from your storage account. With AzCopy, you can upload files, download files, copy files between storage accounts, and even synchronize files. AzCopy can even be configured to work with other cloud providers to help move files back and forth between clouds.
+
+### Azure Storage Explorer
+Azure Storage Explorer is a standalone app that provides a graphical interface to manage files and blobs in your Azure Storage Account. It works on Windows, macOS, and Linux operating systems and uses AzCopy on the backend to perform all of the file and blob management tasks. With Storage Explorer, you can upload to Azure, download from Azure, or move between storage accounts.
+
+### Azure File Sync
+Azure File Sync is a tool that lets you centralize your file shares in Azure Files and keep the flexibility, performance, and compatibility of a Windows file server. Once you install Azure File Sync on your local Windows server, it will automatically stay bi-directionally synced with your files in Azure.
