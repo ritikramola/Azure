@@ -519,3 +519,33 @@ Azure Storage Explorer is a standalone app that provides a graphical interface t
 
 ### Azure File Sync
 Azure File Sync is a tool that lets you centralize your file shares in Azure Files and keep the flexibility, performance, and compatibility of a Windows file server. Once you install Azure File Sync on your local Windows server, it will automatically stay bi-directionally synced with your files in Azure.
+
+# Topic 4 - Security Access in Azure
+
+## Describe Azure directory services
+
+Microsoft Entra ID is a directory service that enables you to sign in and access both Microsoft cloud applications and cloud applications that you develop. Microsoft Entra ID can also help you maintain your on-premises Active Directory deployment.
+Microsoft Entra ID is Microsoft's cloud-based identity and access management service. With Microsoft Entra ID, you control the identity accounts, but Microsoft ensures that the service is available globally.
+
+### Who uses Microsoft Entra ID?
+
+Microsoft Entra ID is for:
+
+1.IT administrators use Microsoft Entra ID to control access to applications and resources based on their business requirements.
+
+2.App developers. use Microsoft Entra ID to provide a standards-based approach for adding functionality to applications that they build.
+
+3.Users. Users can manage their identities and take maintenance actions like self-service password reset.
+Online service subscribers. Microsoft 365, Microsoft Office 365, Azure, and Microsoft Dynamics CRM Online subscribers are already using Microsoft Entra ID to authenticate into their account.
+
+### What does Microsoft Entra ID do?
+
+Microsoft Entra ID provides services such as:
+1.Authentication: This includes verifying identity to access applications and resources. It also includes providing functionality such as self-service password reset, multifactor authentication.
+
+2.Single sign-on: Single sign-on (SSO) enables you to remember only one username and one password to access multiple applications. A single identity is tied to a user, which simplifies the security model. As users change roles or leave an organization, access modifications are tied to that identity.
+
+3.Application management: You can manage your cloud and on-premises apps by using Microsoft Entra ID. Features like Application Proxy, SaaS apps, the My Apps portal, and single sign-on provide a better user experience.
+
+4.Device management: Along with accounts for individual people, Microsoft Entra ID supports the registration of devices. Registration enables devices to be managed through tools like Microsoft Intune. It also allows for device-based Conditional Access policies to restrict access attempts to only those coming from known devices, regardless of the requesting user account.
+
