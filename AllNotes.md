@@ -523,12 +523,10 @@ Azure File Sync is a tool that lets you centralize your file shares in Azure Fil
 # Topic 4 - Security Access in Azure
 
 ## Describe Azure directory services
-
 Microsoft Entra ID is a directory service that enables you to sign in and access both Microsoft cloud applications and cloud applications that you develop. Microsoft Entra ID can also help you maintain your on-premises Active Directory deployment.
 Microsoft Entra ID is Microsoft's cloud-based identity and access management service. With Microsoft Entra ID, you control the identity accounts, but Microsoft ensures that the service is available globally.
 
 ### Who uses Microsoft Entra ID?
-
 Microsoft Entra ID is for:
 
 1.IT administrators use Microsoft Entra ID to control access to applications and resources based on their business requirements.
@@ -539,7 +537,6 @@ Microsoft Entra ID is for:
 Online service subscribers. Microsoft 365, Microsoft Office 365, Azure, and Microsoft Dynamics CRM Online subscribers are already using Microsoft Entra ID to authenticate into their account.
 
 ### What does Microsoft Entra ID do?
-
 Microsoft Entra ID provides services such as:
 1.Authentication: This includes verifying identity to access applications and resources. It also includes providing functionality such as self-service password reset, multifactor authentication.
 
@@ -550,9 +547,49 @@ Microsoft Entra ID provides services such as:
 4.Device management: Along with accounts for individual people, Microsoft Entra ID supports the registration of devices. Registration enables devices to be managed through tools like Microsoft Intune. It also allows for device-based Conditional Access policies to restrict access attempts to only those coming from known devices, regardless of the requesting user account.
 
 ### Can I connect my on-premises AD with Microsoft Entra ID?
-
 If you had an on-premises environment running Active Directory and a cloud deployment using Microsoft Entra ID, you would need to maintain two identity sets. However, you can connect Active Directory with Microsoft Entra ID, enabling a consistent identity experience between cloud and on-premises.Microsoft Entra Connect synchronizes user identities between on-premises Active Directory and Microsoft Entra ID.
 
 ## What is Microsoft Entra Domain Services?
-
 Microsoft Entra Domain Services is a service that provides managed domain services such as domain join, group policy, lightweight directory access protocol (LDAP), and Kerberos/NTLM authentication. With Microsoft Entra Domain Services, you get the benefit of domain services without the need to deploy, manage, and patch domain controllers (DCs) in the cloud.
+
+### How does Microsoft Entra Domain Services work?
+When you create a Microsoft Entra Domain Services managed domain, you define a unique namespace. This namespace is the domain name. Two Windows Server domain controllers are then deployed into your selected Azure region. This deployment of DCs is known as a replica set.
+
+### Is information synchronized?
+A managed domain is configured to perform a one-way synchronization from Microsoft Entra ID to Microsoft Entra Domain Services. You can create resources directly in the managed domain, but they aren't synchronized back to Microsoft Entra ID. In a hybrid environment with an on-premises AD DS environment, Microsoft Entra Connect synchronizes identity information with Microsoft Entra ID, which is then synchronized to the managed domain.
+
+## Describe Azure authentication methods
+Authentication is the process of establishing the identity of a person, service, or device. It requires the person, service, or device to provide some type of credential to prove who they are. Authentication is like presenting ID when you’re traveling. Azure supports multiple authentication methods, including standard passwords, single sign-on (SSO), multifactor authentication (MFA), and passwordless.
+
+### What's single sign-on?
+Single sign-on (SSO) enables a user to sign in one time and use that credential to access multiple resources and applications from different providers. For SSO to work, the different applications and providers must trust the initial authenticator.
+
+With SSO, you need to remember only one ID and one password. Access across applications is granted to a single identity that's tied to the user, which simplifies the security model. As users change roles or leave an organization, access is tied to a single identity.
+
+## What’s multifactor authentication?
+Multifactor authentication is the process of prompting a user for an extra form (or factor) of identification during the sign-in process. MFA helps protect against a password compromise in situations where the password was compromised but the second factor wasn't.
+
+Multifactor authentication provides additional security for your identities by requiring two or more elements to fully authenticate. These elements fall into three categories:
+
+1.Something the user knows – this might be a challenge question.
+
+2.Something the user has – this might be a code that's sent to the user's mobile phone.
+
+3.Something the user is – this is typically some sort of biometric property, such as a fingerprint or face scan.
+
+#### What's Microsoft Entra multifactor authentication?
+ Microsoft Entra multifactor authentication enables users to choose an additional form of authentication during sign-in, such as a phone call or mobile app notification.
+
+ ### What’s passwordless authentication?
+With Features like MFA users often get frustrated with the additional security layer on top of having to remember their passwords. Passwordless authentication methods are more convenient because the password is removed and replaced with something you have, plus something you are, or something you know.
+
+Passwordless authentication needs to be set up on a device before it can work. For example, your computer is something you have. Once it’s been registered or enrolled, Azure now knows that it’s associated with you.
+
+Each organization has different needs when it comes to authentication. Microsoft global Azure and Azure Government offer the following three passwordless authentication options that integrate with Microsoft Entra ID:
+
+        Windows Hello for Business
+        Microsoft Authenticator app
+        FIDO2 security keys
+
+#### Windows Hello for Business
+Windows Hello for Business is ideal for information workers that have their own designated Windows PC. The biometric and PIN credentials are directly tied to the user's PC, which prevents access from anyone other than the owner. With public key infrastructure (PKI) integration and built-in support for single sign-on (SSO), Windows Hello for Business provides a convenient method for seamlessly accessing corporate resources on-premises and in the cloud.
