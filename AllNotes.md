@@ -619,3 +619,22 @@ Depending on how you want to interact with external organizations and the types 
 ## Describe Azure conditional access
 Conditional Access is a tool that Microsoft Entra ID uses to allow (or deny) access to resources based on identity signals. These signals include who the user is, where the user is, and what device the user is requesting access from.
 
+Conditional Access also provides a more granular multifactor authentication experience for users.During sign-in, Conditional Access collects signals from the user, makes decisions based on those signals, and then enforces that decision by allowing or denying the access request or challenging for a multifactor authentication response.
+
+### When can I use Conditional Access?
+Conditional Access is useful when you need to:
+
+1.Require multifactor authentication (MFA) to access an application depending on the requester’s role, location, or network.
+
+2.Require access to services only through approved client applications.eg. limited email access
+
+3.Require users to access your application only from managed devices. A managed device is a device that meets your standards for security and compliance.
+
+4.Block access from untrusted sources, such as access from unknown or unexpected locations.
+
+## Describe Azure role-based access control
+When you have multiple IT and engineering teams, how can you control what access they have to the resources in your cloud environment? The principle of least privilege says you should only grant access up to the level needed to complete a task.
+
+However, managing that level of permissions for an entire team would become tedious. Instead of defining the detailed access requirements for each individual, and then updating access requirements when new resources are created or new people join the team, Azure enables you to control access through **Azure role-based access control** (Azure RBAC).
+
+
