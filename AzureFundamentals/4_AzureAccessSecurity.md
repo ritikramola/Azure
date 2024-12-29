@@ -148,7 +148,6 @@ With Microsoft Entra ID, you can easily enable collaboration across organization
 You also can easily ensure that guest users have appropriate access. You can ask the guests themselves or a decision maker to participate in an access review and recertify (or attest) to the guests' access. The reviewers can give their input on each user's need for continued access, based on suggestions from Microsoft Entra ID. When an access review is finished, you can then make changes and remove access for guests who no longer need it.
 
 ## Describe Azure conditional access
-
 Conditional Access is a tool that Microsoft Entra ID uses to allow (or deny) access to resources based on identity signals. These signals include who the user is, where the user is, and what device the user is requesting access from.
 
 Conditional Access helps IT administrators:
@@ -169,7 +168,6 @@ Based on these signals, the decision might be to allow full access if the user i
 Enforcement is the action that carries out the decision. For example, the action is to allow access or require the user to provide a second form of authentication.
 
 ### When can I use Conditional Access?
-
 Conditional Access is useful when you need to:
 
 1.Require multifactor authentication (MFA) to access an application depending on the requester’s role, location, or network. For example, you could require MFA for administrators but not regular users or for people connecting from outside your corporate network.
@@ -181,7 +179,6 @@ Conditional Access is useful when you need to:
 4.Block access from untrusted sources, such as access from unknown or unexpected locations.
 
 ## Describe Azure role-based access control
-
 When you have multiple IT and engineering teams, how can you control what access they have to the resources in your cloud environment? The principle of least privilege says you should only grant access up to the level needed to complete a task. If you only need read access to a storage blob, then you should only be granted read access to that storage blob. Write access to that blob shouldn’t be granted, nor should read access to other storage blobs. It’s a good security practice to follow.
 
 However, managing that level of permissions for an entire team would become tedious. Instead of defining the detailed access requirements for each individual, and then updating access requirements when new resources are created or new people join the team, Azure enables you to control access through Azure role-based access control (Azure RBAC).
@@ -191,7 +188,6 @@ Azure provides built-in roles that describe common access rules for cloud resour
 So, if you hire a new engineer and add them to the Azure RBAC group for engineers, they automatically get the same access as the other engineers in the same Azure RBAC group. Similarly, if you add additional resources and point Azure RBAC at them, everyone in that Azure RBAC group will now have those permissions on the new resources as well as the existing resources.
 
 ### How is role-based access control applied to resources?
-
 Role-based access control is applied to a scope, which is a resource or set of resources that this access applies to.
 
 The following diagram shows the relationship between roles and scopes. A management group, subscription, or resource group might be given the role of owner, so they have increased control and authority. An observer, who isn't expected to make any updates, might be given a role of Reader for the same scope, enabling them to review or observe the management group, subscription, or resource group.
@@ -216,7 +212,6 @@ Azure RBAC is hierarchical, in that when you grant access at a parent scope, tho
 2.When you assign the Reader role to a group at the subscription scope, the members of that group can view every resource group and resource within the subscription.
 
 ### How is Azure RBAC enforced?
-
 Azure RBAC is enforced on any action that's initiated against an Azure resource that passes through Azure Resource Manager. Resource Manager is a management service that provides a way to organize and secure your cloud resources.
 
 You typically access Resource Manager from the Azure portal, Azure Cloud Shell, Azure PowerShell, and the Azure CLI. Azure RBAC doesn't enforce access permissions at the application or data level. Application security must be handled by your application.
@@ -224,7 +219,6 @@ You typically access Resource Manager from the Azure portal, Azure Cloud Shell, 
 Azure RBAC uses an allow model. When you're assigned a role, Azure RBAC allows you to perform actions within the scope of that role. If one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you have both read and write permissions on that resource group.
 
 ## Describe Zero Trust model
-
 Zero Trust is a security model that assumes the worst case scenario and protects resources with that expectation. Zero Trust assumes breach at the outset, and then verifies each request as though it originated from an uncontrolled network.
 
 Today, organizations need a new security model that effectively adapts to the complexity of the modern environment; embraces the mobile workforce; and protects people, devices, applications, and data wherever they're located.
@@ -238,7 +232,6 @@ To address this new world of computing, Microsoft highly recommends the Zero Tru
 3.Assume breach - Minimize blast radius and segment access. Verify end-to-end encryption. Use analytics to get visibility, drive threat detection, and improve defenses.
 
 ### Adjusting to Zero Trust
-
 Traditionally, corporate networks were restricted, protected, and generally assumed safe. Only managed computers could join the network, VPN access was tightly controlled, and personal devices were frequently restricted or blocked.
 
 The Zero Trust model flips that scenario. Instead of assuming that a device is safe because it’s within the corporate network, it requires everyone to authenticate. Then grants access based on authentication rather than location.
@@ -246,13 +239,11 @@ The Zero Trust model flips that scenario. Instead of assuming that a device is s
 link:https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/zero-trust-cf9202be-d5c6882e.png
 
 ## Describe defense-in-depth
-
 The objective of defense-in-depth is to protect information and prevent it from being stolen by those who aren't authorized to access it.
 
 A defense-in-depth strategy uses a series of mechanisms to slow the advance of an attack that aims at acquiring unauthorized access to data.
 
 ### Layers of defense-in-depth
-
 You can visualize defense-in-depth as a set of layers, with the data to be secured at the center and all the other layers functioning to protect that central data layer.
 
 A diagram showing the defense in depth layers. From the center: data, application, compute, network, perimeter, identity & access, physical security.
@@ -280,13 +271,11 @@ Here's a brief overview of the role of each layer:
 Azure provides security tools and features at every level of the defense-in-depth concept. Let's take a closer look at each layer:
 
 #### 1.Physical security
-
 Physically securing access to buildings and controlling access to computing hardware within the datacenter are the first line of defense.
 
 With physical security, the intent is to provide physical safeguards against access to assets. These safeguards ensure that other layers can't be bypassed, and loss or theft is handled appropriately. Microsoft uses various physical security mechanisms in its cloud datacenters.
 
 #### 2.Identity and access
-
 The identity and access layer is all about ensuring that identities are secure, that access is granted only to what's needed, and that sign-in events and changes are logged.
 
 At this layer, it's important to:
@@ -296,7 +285,6 @@ At this layer, it's important to:
                 Audit events and changes.
 
 #### 3.Perimeter
-
 The network perimeter protects from network-based attacks against your resources. Identifying these attacks, eliminating their impact, and alerting you when they happen are important ways to keep your network secure.
 
 At this layer, it's important to:
@@ -305,7 +293,6 @@ At this layer, it's important to:
         Use perimeter firewalls to identify and alert on malicious attacks against your network.
 
 #### 4.Network
-
 At this layer, the focus is on limiting the network connectivity across all your resources to allow only what's required. By limiting this communication, you reduce the risk of an attack spreading to other systems in your network.
 
 At this layer, it's important to:
@@ -316,7 +303,6 @@ Limit communication between resources.
         Implement secure connectivity to on-premises networks.
 
 #### 5.Compute
-
 Malware, unpatched systems, and improperly secured systems open your environment to attacks. The focus in this layer is on making sure that your compute resources are secure and that you have the proper controls in place to minimize security issues.
 
 At this layer, it's important to:
@@ -325,7 +311,6 @@ At this layer, it's important to:
         Implement endpoint protection on devices and keep systems patched and current.    
 
 #### 6.Application
-
 Integrating security into the application development lifecycle helps reduce the number of vulnerabilities introduced in code. Every development team should ensure that its applications are secure by default.
 
 At this layer, it's important to:
@@ -335,7 +320,6 @@ At this layer, it's important to:
         Make security a design requirement for all application development.
 
 #### 7.Data
-
 Those who store and control access to data are responsible for ensuring that it's properly secured. Often, regulatory requirements dictate the controls and processes that must be in place to ensure the confidentiality, integrity, and availability of the data.
 
 In almost all cases, attackers are after data:
