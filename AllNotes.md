@@ -637,4 +637,30 @@ When you have multiple IT and engineering teams, how can you control what access
 
 However, managing that level of permissions for an entire team would become tedious. Instead of defining the detailed access requirements for each individual, and then updating access requirements when new resources are created or new people join the team, Azure enables you to control access through **Azure role-based access control** (Azure RBAC).
 
+Azure provides built-in roles that describe common access rules for cloud resources. You can also define your own roles. Each role has an associated set of access permissions that relate to that role. So, if you hire a new engineer and add them to the Azure RBAC group for engineers, they automatically get the same access as the other engineers in the same Azure RBAC group.
+
+### How is role-based access control applied to resources?
+Role-based access control is applied to a scope, which is a resource or set of resources that this access applies to.
+
+A management group, subscription, or resource group might be given the role of owner, so they have increased control and authority. An observer, who isn't expected to make any updates, might be given a role of Reader for the same scope, enabling them to review or observe the management group, subscription, or resource group.
+
+zure RBAC is hierarchical, in that when you grant access at a parent scope, those permissions are inherited by all child scopes.
+
+1.When you assign the Owner role to a user at the management group scope, that user can manage everything in all subscriptions within the management group.
+
+2.When you assign the Reader role to a group at the subscription scope, the members of that group can view every resource group and resource within the subscription.
+
+### How is Azure RBAC enforced?
+Azure RBAC is enforced on any action that's initiated against an Azure resource that passes through Azure Resource Manager. Resource Manager is a management service that provides a way to organize and secure your cloud resources.
+
+You typically access Resource Manager from the Azure portal, Azure Cloud Shell, Azure PowerShell, and the Azure CLI. Azure RBAC doesn't enforce access permissions at the application or data level. Application security must be handled by your application.
+
+Azure RBAC uses an allow model. When you're assigned a role, Azure RBAC allows you to perform actions within the scope of that role. If one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you have both read and write permissions on that resource group.
+
+
+
+
+
+
+
 

@@ -188,7 +188,6 @@ Azure provides built-in roles that describe common access rules for cloud resour
 So, if you hire a new engineer and add them to the Azure RBAC group for engineers, they automatically get the same access as the other engineers in the same Azure RBAC group. Similarly, if you add additional resources and point Azure RBAC at them, everyone in that Azure RBAC group will now have those permissions on the new resources as well as the existing resources.
 
 ### How is role-based access control applied to resources?
-
 Role-based access control is applied to a scope, which is a resource or set of resources that this access applies to.
 
 The following diagram shows the relationship between roles and scopes. A management group, subscription, or resource group might be given the role of owner, so they have increased control and authority. An observer, who isn't expected to make any updates, might be given a role of Reader for the same scope, enabling them to review or observe the management group, subscription, or resource group.
