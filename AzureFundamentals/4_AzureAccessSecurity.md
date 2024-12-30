@@ -365,7 +365,6 @@ For example, if you've connected an Amazon Web Services (AWS) account to an Azur
 3.Microsoft Defender for Servers brings threat detection and advanced defenses to your Windows and Linux EC2 instances.
 
 ### Assess, Secure, and Defend
-
 Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
 
 Continuously assess – Know your security posture. Identify and track vulnerabilities.
@@ -375,7 +374,6 @@ Defend – Detect and resolve threats to resources, workloads, and services.
 image:https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/assess-secure-defend-46228306-c726aca3.png
 
 #### Continuously assess
-
 Defender for cloud helps you continuously assess your environment. Defender for Cloud includes vulnerability assessment solutions for your virtual machines, container registries, and SQL servers.
 
 Microsoft Defender for servers includes automatic, native integration with Microsoft Defender for Endpoint. With this integration enabled, you'll have access to the vulnerability findings from Microsoft threat and vulnerability management.

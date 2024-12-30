@@ -719,3 +719,13 @@ Defender for Cloud helps you detect threats across:
 #### Defend your hybrid resources
 In addition to defending your Azure environment, you can add Defender for Cloud capabilities to your hybrid cloud environment to protect your non-Azure servers. To help you focus on what matters the most, you'll get customized threat intelligence and prioritized alerts according to your specific environment.
 
+#### Defend resources running on other clouds
+Defender for Cloud can also protect resources in other clouds (such as AWS and GCP).
+
+1.Defender for Cloud's CSPM features extend to your AWS resources.Defender for Cloud's asset inventory page is a multicloud enabled feature helping you manage your AWS resources alongside your Azure resources.
+
+.Microsoft Defender for Containers extends its container threat detection and advanced defenses to your Amazon EKS Linux clusters.
+
+3.Microsoft Defender for Servers brings threat detection and advanced defenses to your Windows and Linux EC2 instances.
+
+
