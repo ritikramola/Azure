@@ -349,13 +349,11 @@ Defender for Cloud helps you detect threats across:
 3.Networks – Defender for Cloud helps you limit exposure to brute force attacks. By reducing access to virtual machine ports, using the just-in-time VM access, you can harden your network by preventing unnecessary access. You can set secure access policies on selected ports, for only authorized users, allowed source IP address ranges or IP addresses, and for a limited amount of time.
 
 #### Defend your hybrid resources
-
 In addition to defending your Azure environment, you can add Defender for Cloud capabilities to your hybrid cloud environment to protect your non-Azure servers. To help you focus on what matters the most, you'll get customized threat intelligence and prioritized alerts according to your specific environment.
 
 To extend protection to on-premises machines, deploy Azure Arc and enable Defender for Cloud's enhanced security features.
 
 #### Defend resources running on other clouds
-
 Defender for Cloud can also protect resources in other clouds (such as AWS and GCP).
 
 For example, if you've connected an Amazon Web Services (AWS) account to an Azure subscription, you can enable any of these protections:
