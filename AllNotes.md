@@ -657,10 +657,47 @@ You typically access Resource Manager from the Azure portal, Azure Cloud Shell, 
 
 Azure RBAC uses an allow model. When you're assigned a role, Azure RBAC allows you to perform actions within the scope of that role. If one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you have both read and write permissions on that resource group.
 
+## Describe Zero Trust model
+Zero Trust is a security model that assumes the worst case scenario and protects resources with that expectation. Zero Trust assumes breach at the outset, and then verifies each request as though it originated from an uncontrolled network.
+
+To address the new world of computing, Microsoft highly recommends the Zero Trust security model, which is based on these guiding principles:
+
+1.Verify explicitly - Always authenticate and authorize based on all available data points.
+
+2.Use least privilege access - Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
+        
+3.Assume breach - Minimize blast radius and segment access. Verify end-to-end encryption. Use analytics to get visibility, drive threat detection, and improve defenses.
 
 
+### Adjusting to Zero Trust
+The Zero Trust model flips that scenario. Instead of assuming that a device is safe because it’s within the corporate network, it requires everyone to authenticate. Then grants access based on authentication rather than location.
 
+## Describe defense-in-depth
+The objective of defense-in-depth is to protect information and prevent it from being stolen by those who aren't authorized to access it.
 
+A defense-in-depth strategy uses a series of mechanisms to slow the advance of an attack that aims at acquiring unauthorized access to data.
 
+### Layers of defense-in-depth
+You can visualize defense-in-depth as a set of layers, with the data to be secured at the center and all the other layers functioning to protect that central data layer.
 
+From the center: data, application, compute, network, perimeter, identity & access, physical security.
 
+Each layer provides protection so that if one layer is breached, a subsequent layer is already in place to prevent further exposure. This approach removes reliance on any single layer of protection. It slows down an attack and provides alert information that security teams can act upon, either automatically or manually.
+
+Here's a brief overview of the role of each layer:
+
+1.The **physical security layer** is the first line of defense to protect computing hardware in the datacenter.
+
+2.The **identity and access layer** controls access to infrastructure and change control.the access is granted only to what's needed, and that sign-in events and changes are logged.
+
+3.The **perimeter layer** uses distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
+
+4.The **network layer** limits communication between resources through segmentation and access controls.
+
+5.The **compute layer** secures access to virtual machines.
+
+6.The **application layer** helps ensure that applications are secure and free of security vulnerabilities.
+
+7.The **data layer** controls access to business and customer data that you need to protect.
+
+8.These layers provide a guideline for you to help make security configuration decisions in all of the layers of your applications.
