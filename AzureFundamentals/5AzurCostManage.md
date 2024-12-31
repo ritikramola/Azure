@@ -3,7 +3,6 @@
 In this module, you’ll be introduced to factors that impact costs in Azure and tools to help you both predict potential costs and monitor and control costs.
 
 ## Describe factors that can affect costs in Azure
-
 link: https://www.microsoft.com/en-us/videoplayer/embed/RWGNx4?postJsllMsg=true
 
 Azure shifts development costs from the capital expense (CapEx) of building out and maintaining infrastructure and facilities to an operational expense (OpEx) of renting infrastructure as you need it, whether it’s compute, storage, networking, and so on.
@@ -28,7 +27,6 @@ Screenshot of storage blob settings showing hot and cool access tiers.
 With a virtual machine (VM), you may have to consider licensing for the operating system or other software, the processor and number of cores for the VM, the attached storage, and the network interface. Just like with storage, provisioning the same virtual machine in different regions may result in different costs.
 
 ### Consumption
-
 Pay-as-you-go has been a consistent theme throughout, and that’s the cloud payment model where you pay for the resources that you use during a billing cycle. If you use more compute this cycle, you pay more. If you use less in the current cycle, you pay less. It’s a straight forward pricing mechanism that allows for maximum flexibility.
 
 However, Azure also offers the ability to commit to using a set amount of cloud resources in advance and receiving discounts on those “reserved” resources. Many services, including databases, compute, and storage all provide the option to commit to a level of use and receive a discount, in some cases up to 72 percent.
@@ -36,17 +34,14 @@ However, Azure also offers the ability to commit to using a set amount of cloud 
 When you reserve capacity, you’re committing to using and paying for a certain amount of Azure resources during a given period (typically one or three years). With the back-up of pay-as-you-go, if you see a sudden surge in demand that eclipses what you’ve pre-reserved, you just pay for the additional resources in excess of your reservation. This model allows you to recognize significant savings on reliable, consistent workloads while also having the flexibility to rapidly increase your cloud footprint as the need arises.
 
 ### Maintenance
-
 The flexibility of the cloud makes it possible to rapidly adjust resources based on demand. Using resource groups can help keep all of your resources organized. In order to control costs, it’s important to maintain your cloud environment. For example, every time you provision a VM, additional resources such as storage and networking are also provisioned. If you deprovision the VM, those additional resources may not deprovision at the same time, either intentionally or unintentionally. By keeping an eye on your resources and making sure you’re not keeping around resources that are no longer needed, you can help control cloud costs.
 
 ### Geography
-
 When you provision most resources in Azure, you need to define a region where the resource deploys. Azure infrastructure is distributed globally, which enables you to deploy your services centrally or closest to your customers, or something in between. With this global deployment comes global pricing differences. The cost of power, labor, taxes, and fees vary depending on the location. Due to these variations, Azure resources can differ in costs to deploy depending on the region.
 
 Network traffic is also impacted based on geography. For example, it’s less expensive to move information within Europe than to move information from Europe to Asia or South America.
 
 ### Network Traffic
-
 Billing zones are a factor in determining the cost of some Azure services.
 
 Bandwidth refers to data moving in and out of Azure datacenters. Some inbound data transfers (data going into Azure datacenters) are free. For outbound data transfers (data leaving Azure datacenters), data transfer pricing is based on zones.
@@ -54,23 +49,19 @@ Bandwidth refers to data moving in and out of Azure datacenters. Some inbound da
 A zone is a geographical grouping of Azure regions for billing purposes. The bandwidth pricing page has additional information on pricing for data ingress, egress, and transfer.
 
 ### Subscription type
-
 Some Azure subscription types also include usage allowances, which affect costs.
 
 For example, an Azure free trial subscription provides access to a number of Azure products that are free for 12 months. It also includes credit to spend within your first 30 days of sign-up. You'll get access to more than 25 products that are always free (based on resource and region availability).
 
 ### Azure Marketplace
-
 Azure Marketplace lets you purchase Azure-based solutions and services from third-party vendors. This could be a server with software preinstalled and configured, or managed network firewall appliances, or connectors to third-party backup services. When you purchase products through Azure Marketplace, you may pay for not only the Azure services that you’re using, but also the services or expertise of the third-party vendor. Billing structures are set by the vendor.
 
 All solutions available in Azure Marketplace are certified and compliant with Azure policies and standards. The certification policies may vary based on the service or solution type and Azure service involved. Commercial marketplace certification policies has additional information on Azure Marketplace certifications.
 
 ## Compare the Pricing and Total Cost of Ownership calculators
-
 The pricing calculator and the total cost of ownership (TCO) calculator are two calculators that help you understand potential Azure expenses. Both calculators are accessible from the internet, and both calculators allow you to build out a configuration. However, the two calculators have very different purposes.
 
 ### Pricing calculator
-
 The pricing calculator is designed to give you an estimated cost for provisioning resources in Azure. You can get an estimate for individual resources, build out a solution, or use an example scenario to see an estimate of the Azure spend. The pricing calculator’s focus is on the cost of provisioned resources in Azure.
 
  **Note**
@@ -82,7 +73,6 @@ With the pricing calculator, you can estimate the cost of any provisioned resour
 image:https://learn.microsoft.com/en-us/training/wwl-azure/describe-cost-management-azure/media/price-calculator-0a750ac3.png
 
 ### TCO calculator
-
 The TCO calculator is designed to help you compare the costs for running an on-premises infrastructure compared to an Azure Cloud infrastructure. With the TCO calculator, you enter your current infrastructure configuration, including servers, databases, storage, and outbound network traffic. The TCO calculator then compares the anticipated costs for your current environment with an Azure environment supporting the same infrastructure requirements.
 
 With the TCO calculator, you enter your configuration, add in assumptions like power and IT labor costs, and are presented with an estimation of the cost difference to run the same environment in your current datacenter or in Azure.
@@ -94,7 +84,6 @@ image:https://learn.microsoft.com/en-us/training/wwl-azure/describe-cost-managem
 ## Exercise - Estimate workload costs by using the Pricing calculator
 
 ### Define your requirements
-
 Before you run the Pricing calculator, you need a sense of what Azure services you need.
 
 For a basic web application hosted in your datacenter, you might run a configuration similar to the following.
@@ -135,7 +124,6 @@ FAQs Here you'll discover answers to frequently asked questions about the Pricin
 ### Estimate your solution
 
 #### Add services to the estimate
-
 On the Products tab, select the service from each of these categories:
 
     Category	Service
