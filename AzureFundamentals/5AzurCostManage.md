@@ -137,7 +137,6 @@ Networking	Application Gateway
 Scroll to the bottom of the page. Each service is listed with its default configuration.
 
 ### Review, share, and save your estimate
-
 At the bottom of the page, you see the total estimated cost of running the solution. You can change the currency type if you want.
 
 At this point, you have a few options:
@@ -147,7 +146,6 @@ Select Save or Save as to save your estimate to the Saved Estimates tab for late
 Select Share to generate a URL so you can share the estimate with your team.
 
 ## Exercise - Compare workload costs using the TCO calculator
-
 In this exercise, you use the Total Cost of Ownership (TCO) Calculator to compare the cost of running a sample workload in your datacenter versus on Azure.
 
 Assume you're considering moving some of your on-premises workloads to the cloud. But first, you need to understand more about moving from a relatively fixed cost structure to an ongoing monthly cost structure.
@@ -157,11 +155,9 @@ You'll need to investigate whether there are any potential cost savings in movin
 Instead of manually collecting everything you think might be included, you use the TCO Calculator as a starting point. You adjust the provided cost assumptions to match your on-premises environment.
 
 ### Recall that the TCO Calculator involves three steps:
-
 link:https://learn.microsoft.com/en-us/training/wwl-azure/describe-cost-management-azure/media/total-cost-ownership-calculator-steps-76e927a5.png
 
 #### Define your workloads
-
 1.Enter the specifications of your on-premises infrastructure into the TCO Calculator.
 2.Go to the TCO Calculator.
 3.Under Define your workloads, select Add server workload to create a row for your bank of Windows Server VMs.
@@ -171,7 +167,6 @@ link:https://learn.microsoft.com/en-us/training/wwl-azure/describe-cost-manageme
 7.Select Next.
 
 #### Adjust assumptions
-
 Here, you specify your currency. For brevity, you leave the remaining fields at their default values.
 
 In practice, you would adjust any cost assumptions and make any adjustments to match your current on-premises environment.
@@ -180,7 +175,6 @@ In practice, you would adjust any cost assumptions and make any adjustments to m
     Select Next.
 
 #### View the report
-
 Take a moment to review the generated report.
 
 Remember, you've been tasked to investigate cost savings for your European datacenter over the next three years.
@@ -194,7 +188,6 @@ Great work. You now have the information that you can share with your Chief Fina
 
 
 ## Describe the Microsoft Cost Management tool
-
 Microsoft Azure is a global cloud provider, meaning you can provision resources anywhere in the world. You can provision resources rapidly to meet a sudden demand, or to test out a new feature, or on accident. If you accidentally provision new resources, you may not be aware of them until it’s time for your invoice. Cost Management is a service that helps avoid those situations.
 
 ### What is Cost Management?
@@ -277,5 +270,6 @@ Environment	    An environment name, such as "Prod," "Dev," or "Test."
 
 Impact	    How important the resource is to business operations, such as "Mission-critical," "High-impact,"        
             or  "Low-impact."
+
 
 

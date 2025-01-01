@@ -772,5 +772,31 @@ That OpEx cost can be impacted by many factors. Some of the impacting factors ar
     Subscription type
     Azure Marketplace
 
-
 ### Resource Type
+A number of factors influence the cost of Azure resources. The type, the settings, and the Azure region will all have an impact on how much a resource costs. Azure creates metered instances for that resource. The meters track the resources' usage and generate a usage record that is used to calculate your bill.
+
+**Example**
+With a storage account, you specify a type such as blob, a performance tier, an access tier, redundancy settings, and a region. Creating the same storage account in different regions may show different costs and changing any of the settings may also impact the price.
+
+### Consumption
+Pay-as-you-go has been a consistent theme throughout, and that’s the cloud payment model where you pay for the resources that you use during a billing cycle. If you use more compute this cycle, you pay more. If you use less in the current cycle, you pay less. It’s a straight forward pricing mechanism that allows for maximum flexibility.
+
+However, Azure also offers the ability to commit to using a set amount of cloud resources in advance and receiving discounts on those “reserved” resources.
+
+### Maintenance
+The flexibility of the cloud makes it possible to rapidly adjust resources based on demand. Using resource groups can help keep all of your resources organized. In order to control costs, it’s important to maintain your cloud environment. By keeping an eye on your resources and making sure you’re not keeping around resources that are no longer needed, you can help control cloud costs.
+
+## Geography
+When you provision most resources in Azure, you need to define a region where the resource deploys. Azure infrastructure is distributed globally, which enables you to deploy your services centrally or closest to your customers, or something in between. With this global deployment comes global pricing differences. The cost of power, labor, taxes, and fees vary depending on the location.
+
+### Network Traffic
+Billing zones are a factor in determining the cost of some Azure services.
+
+Bandwidth refers to data moving in and out of Azure datacenters. Some inbound data transfers (data coming into Azure datacenters) are free. For outbound data transfers (data leaving Azure datacenters), data transfer pricing is based on zones.
+
+A zone is a geographical grouping of Azure regions for billing purposes. The bandwidth pricing page has additional information on pricing for data ingress, egress, and transfer.
+
+### Subscription type
+Some Azure subscription types also include usage allowances, which affect costs.
+
+For example, an Azure free trial subscription provides access to a number of Azure products that are free for 12 months.
