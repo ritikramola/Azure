@@ -800,3 +800,72 @@ A zone is a geographical grouping of Azure regions for billing purposes. The ban
 Some Azure subscription types also include usage allowances, which affect costs.
 
 For example, an Azure free trial subscription provides access to a number of Azure products that are free for 12 months.
+
+### Azure Marketplace
+Azure Marketplace lets you purchase Azure-based solutions and services from third-party vendors. This could be a server with software preinstalled and configured, or managed network firewall appliances, or connectors to third-party backup services. When you purchase products through Azure Marketplace, you may pay for not only the Azure services that you’re using, but also the services or expertise of the third-party vendor. Billing structures are set by the vendor
+
+### Compare the Pricing and Total Cost of Ownership calculators
+The pricing calculator and the total cost of ownership (TCO) calculator are two calculators that help you understand potential Azure expenses. Both calculators are accessible from the internet, and both calculators allow you to build out a configuration. However, the two calculators have very different purposes.
+
+#### Pricing calculator
+The pricing calculator is designed to give you an estimated cost for provisioning resources in Azure. You can get an estimate for individual resources, build out a solution, or use an example scenario to see an estimate of the Azure spend. The pricing calculator’s focus is on the cost of provisioned resources in Azure.
+
+**Note**
+The Pricing calculator is for information purposes only. The prices are only an estimate. Nothing is provisioned when you add resources to the pricing calculator, and you won't be charged for any services you select.
+
+#### TCO(total cost of ownership) calculator
+With the TCO calculator, you enter your configuration, add in assumptions like power and IT labor costs, and are presented with an estimation of the cost difference to run the same environment in your current datacenter or in Azure.
+
+### Define your requirements
+Before you run the Pricing calculator, you need a sense of what Azure services you need.
+
+For a basic web application hosted in your datacenter, you might run a configuration similar to the following.
+
+An ASP.NET web application that runs on Windows. The web application provides information about product inventory and pricing. There are two virtual machines that are connected through a central load balancer. The web application connects to a SQL Server database that holds inventory and pricing information.
+
+To migrate to Azure, you might:
+
+    Use Azure Virtual Machines instances, similar to the virtual machines used in your datacenter.
+    Use Azure Application Gateway for load balancing.
+    Use Azure SQL Database to hold inventory and pricing information.
+
+In practice, you would define your requirements in greater detail. But here are some basic facts and requirements to get you started:
+
+    The application is used internally. It's not accessible to customers.
+    This application doesn't require a massive amount of computing power.   
+    The virtual machines and the database run all the time (730 hours per month).
+    The network processes about 1 TB of data per month.
+    The database doesn't need to be configured for high-performance workloads and requires no more than 32 GB of storage.
+
+### Describe the Microsoft Cost Management tool
+Microsoft Azure is a global cloud provider, meaning you can provision resources anywhere in the world. You can provision resources rapidly to meet a sudden demand, or to test out a new feature, or on accident. If you accidentally provision new resources, you may not be aware of them until it’s time for your invoice. Cost Management is a service that helps avoid those situations.
+
+### What is Cost Management?
+Cost Management provides the ability to quickly check Azure resource costs, create alerts based on resource spend, and create budgets that can be used to automate management of resources.
+
+Cost analysis is a subset of Cost Management that provides a quick visual for your Azure costs. Using cost analysis, you can quickly view the total cost in a variety of different ways, including by billing cycle, region, resource, and so on.
+
+You use cost analysis to explore and analyze your organizational costs. You can view aggregated costs by organization to understand where costs are accrued and to identify spending trends.
+
+### Cost alerts
+Cost alerts provide a single location to quickly check on all of the different alert types that may show up in the Cost Management service. The three types of alerts that may show up are:
+
+    Budget alerts
+    Credit alerts
+    Department spending quota alerts.
+
+#### Budget alerts
+Budget alerts notify you when spending, based on usage or cost, reaches or exceeds the amount defined in the alert condition of the budget. Cost Management budgets are created using the Azure portal or the Azure Consumption API.
+
+In the Azure portal, budgets are defined by cost or by consumption usage when using the Azure Consumption API. Budget alerts support both cost-based and usage-based budgets.You can view all cost alerts in the **Azure portal**.
+
+#### Credit alerts
+Credit alerts notify you when your Azure credit monetary commitments are consumed. Monetary commitments are for organizations with Enterprise Agreements (EAs). Credit alerts are generated automatically at 90% and at 100% of your Azure credit balance. Whenever an alert is generated, it's reflected in cost alerts, and in the email sent to the account owners.
+
+#### Department spending quota alerts
+Department spending quota alerts notify you when department spending reaches a fixed threshold of the quota. Spending quotas are configured in the EA portal. Whenever a threshold is met, it generates an email to department owners, and appears in cost alerts.
+
+### Budgets
+A budget is where you set a spending limit for Azure. You can set budgets based on a subscription, resource group, service type, or other criteria. When you set a budget, you will also set a budget alert. When the budget hits the budget alert level, it will trigger a budget alert that shows up in the cost alerts area. If configured, budget alerts will also send an email notification that a budget alert threshold has been triggered.
+
+A more advanced use of budgets enables budget conditions to trigger automation that suspends or otherwise modifies resources once the trigger condition has occurred.
