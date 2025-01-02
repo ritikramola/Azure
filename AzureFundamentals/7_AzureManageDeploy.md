@@ -1,9 +1,7 @@
 # Introduction
-
 This module introduces you to features and tools for managing and deploying Azure resources. You learn about the Azure portal (a graphic interface for managing Azure resources), the command line, and scripting tools that help deploy or configure resources. You also learn about Azure services that help you manage your on-premises and multicloud environments from within Azure.
 
 ## Describe tools for interacting with Azure
-
 To get the most out of Azure, you need a way to interact with the Azure environment, the management groups, subscriptions, resource groups, resources, and so on. Azure provides multiple tools for managing your environment, including the:
 
     Azure portal
@@ -11,23 +9,21 @@ To get the most out of Azure, you need a way to interact with the Azure environm
     Azure Command Line Interface (CLI)
 
 ### What is the Azure portal?
-
 The Azure portal is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription by using a graphical user interface. You can:
 
-1Build, manage, and monitor everything from simple web apps to complex cloud deployments
+1 Build, manage, and monitor everything from simple web apps to complex cloud deployments
 
-2Create custom dashboards for an organized view of resources
+2 Create custom dashboards for an organized view of resources
 
-3Configure accessibility options for an optimal experience
+3bConfigure accessibility options for an optimal experience
 
 The following video introduces you to the Azure portal:
 
     link:https://www.microsoft.com/en-us/videoplayer/embed/RE4ICN6?postJsllMsg=true
 
-
 The Azure portal is designed for resiliency and continuous availability. It maintains a presence in every Azure datacenter. This configuration makes the Azure portal resilient to individual datacenter failures and avoids network slowdowns by being close to users. The Azure portal updates continuously and requires no downtime for maintenance activities.
 
-### Azure Cloud Shell
+## Azure Cloud Shell
 Azure Cloud Shell is a browser-based shell tool that allows you to create, configure, and manage Azure resources using a shell. Azure Cloud Shell support both Azure PowerShell and the Azure Command Line Interface (CLI), which is a Bash shell.
 
 You can access Azure Cloud Shell via the Azure portal by selecting the Cloud Shell icon:
@@ -43,7 +39,6 @@ Azure Cloud Shell has several features that make it a unique offering to support
 3.You choose the shell you’re most familiar with; Azure Cloud Shell supports both Azure PowerShell and the Azure CLI (which uses Bash).
 
 ### What is Azure PowerShell?
-
 Azure PowerShell is a shell with which developers, DevOps, and IT professionals can run commands called command-lets (cmdlets). These commands call the Azure REST API to perform management tasks in Azure. Cmdlets can be run independently to handle one-off changes, or they may be combined to help orchestrate complex actions such as:
 
 The routine setup, teardown, and maintenance of a single resource or multiple connected resources.
@@ -53,7 +48,6 @@ Capturing the commands in a script makes the process repeatable and automatable.
 In addition to be available via Azure Cloud Shell, you can install and configure Azure PowerShell on Windows, Linux, and Mac platforms.
 
 ### What is the Azure CLI?
-
 The Azure CLI is functionally equivalent to Azure PowerShell, with the primary difference being the syntax of commands. While Azure PowerShell uses PowerShell commands, the Azure CLI uses Bash commands.
 
 The Azure CLI provides the same benefits of handling discrete tasks or orchestrating complex operations through code. It’s also installable on Windows, Linux, and Mac platforms, as well as through Azure Cloud Shell.
