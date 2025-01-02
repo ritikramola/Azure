@@ -906,3 +906,51 @@ Microsoft 365 features as a core component of the Microsoft Purview risk and com
     Identify data risks and manage regulatory compliance requirements.
     Get started with regulatory compliance.
 
+###  Microsoft Purview Unified data governance
+Microsoft Purview has robust, unified data governance solutions that help manage your on-premises, multicloud, and software as a service data. Microsoft Purview’s robust data governance capabilities enable you to manage your data stored in Azure, SQL and Hive databases, locally, and even in other clouds like Amazon S3.
+
+Microsoft Purview’s unified data governance helps your organization:
+
+    Create an up-to-date map of your entire data estate that includes data classification and end-to-end lineage.
+    Identify where sensitive data is stored in your estate.
+    Create a secure environment for data consumers to find valuable data.
+    Generate insights about how your data is stored and used.
+    Manage access to the data in your estate securely and at scale.
+
+## Describe the purpose of Azure Policy
+Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across your resource configurations so that those configurations stay compliant with corporate standards.
+
+How does Azure Policy define policies?
+
+Azure Policy enables you to define both individual policies and groups of related policies, known as initiatives. Azure Policy evaluates your resources and highlights resources that aren't compliant with the policies you've created. Azure Policy can also prevent noncompliant resources from being created.
+
+Azure Policies can be set at each level, enabling you to set policies on a specific resource, resource group, subscription, and so on. Additionally, Azure Policies are inherited, so if you set a policy at a high level, it will automatically be applied to all of the groupings that fall within the parent.
+
+Azure Policy comes with built-in policy and initiative definitions for Storage, Networking, Compute, Security Center, and Monitoring.
+
+Azure Policy also integrates with Azure DevOps by applying any continuous integration and delivery pipeline policies that pertain to the pre-deployment and post-deployment phases of your applications.
+
+### What are Azure Policy initiatives?
+An Azure Policy initiative is a way of grouping related policies together. The initiative definition contains all of the policy definitions to help track your compliance state for a larger goal.
+
+## Describe the purpose of resource locks
+A resource lock prevents resources from being accidentally deleted or changed.
+
+Even with Azure role-based access control (Azure RBAC) policies in place, there's still a risk that people with the right level of access could delete critical cloud resources. Resource locks prevent resources from being deleted or updated, depending on the type of lock. Resource locks can be applied to individual resources, resource groups, or even an entire subscription
+
+### Types of Resource Locks
+There are two types of resource locks, one that prevents users from deleting and one that prevents users from changing or deleting a resource.
+
+1.Delete means authorized users can still read and modify a resource, but they can't delete the resource.
+
+2.ReadOnly means authorized users can read a resource, but they can't delete or update the resource. Applying this lock is similar to restricting all authorized users to the permissions granted by the Reader role.
+
+### How do I manage resource locks?
+You can manage resource locks from the Azure portal, PowerShell, the Azure CLI, or from an Azure Resource Manager template.
+
+To view, add, or delete locks in the Azure portal, go to the Settings section of any resource's Settings pane in the Azure portal.
+
+
+
+
+

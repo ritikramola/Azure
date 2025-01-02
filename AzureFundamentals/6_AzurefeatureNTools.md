@@ -34,7 +34,6 @@ Microsoft Purview’s unified data governance helps your organization:
     Manage access to the data in your estate securely and at scale.
 
 ## Describe the purpose of Azure Policy
-
 How do you ensure that your resources stay compliant? Can you be alerted if a resource's configuration has changed?
 
 Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across your resource configurations so that those configurations stay compliant with corporate standards.
@@ -52,7 +51,6 @@ In some cases, Azure Policy can automatically remediate noncompliant resources a
 Azure Policy also integrates with Azure DevOps by applying any continuous integration and delivery pipeline policies that pertain to the pre-deployment and post-deployment phases of your applications.
 
 ### What are Azure Policy initiatives?
-
 An Azure Policy initiative is a way of grouping related policies together. The initiative definition contains all of the policy definitions to help track your compliance state for a larger goal.
 
 For example, Azure Policy includes an initiative named Enable Monitoring in Azure Security Center. Its goal is to monitor all available security recommendations for all Azure resource types in Azure Security Center.
@@ -67,13 +65,11 @@ Under this initiative, the following policy definitions are included:
 In fact, the Enable Monitoring in Azure Security Center initiative contains over 100 separate policy definitions.
 
 ## Describe the purpose of resource locks
-
 A resource lock prevents resources from being accidentally deleted or changed.
 
 Even with Azure role-based access control (Azure RBAC) policies in place, there's still a risk that people with the right level of access could delete critical cloud resources. Resource locks prevent resources from being deleted or updated, depending on the type of lock. Resource locks can be applied to individual resources, resource groups, or even an entire subscription. Resource locks are inherited, meaning that if you place a resource lock on a resource group, all of the resources within the resource group will also have the resource lock applied.
 
 ## Types of Resource Locks
-
 There are two types of resource locks, one that prevents users from deleting and one that prevents users from changing or deleting a resource.
 
 1.Delete means authorized users can still read and modify a resource, but they can't delete the resource.
@@ -81,7 +77,6 @@ There are two types of resource locks, one that prevents users from deleting and
 2.ReadOnly means authorized users can read a resource, but they can't delete or update the resource. Applying this lock is similar to restricting all authorized users to the permissions granted by the Reader role.
 
 ### How do I manage resource locks?
-
 You can manage resource locks from the Azure portal, PowerShell, the Azure CLI, or from an Azure Resource Manager template.
 
 To view, add, or delete locks in the Azure portal, go to the Settings section of any resource's Settings pane in the Azure portal.
@@ -89,7 +84,6 @@ To view, add, or delete locks in the Azure portal, go to the Settings section of
 image:https://learn.microsoft.com/en-us/training/wwl-azure/describe-features-tools-azure-for-governance-compliance/media/resource-lock-54695e43-61c37c58.png
 
 ### How do I delete or change a locked resource?
-
 Although locking helps prevent accidental changes, you can still make changes by following a two-step process.
 
 To modify a locked resource, you must first remove the lock. After you remove the lock, you can apply any action you have permissions to perform. Resource locks apply regardless of RBAC permissions. Even if you're an owner of the resource, you must still remove the lock before you can perform the blocked activity.
@@ -192,7 +186,6 @@ Make sure you complete Task 6, the removal of the storage account. You are solel
 
 
 ## Describe the purpose of the Service Trust portal
-
 The Microsoft Service Trust Portal is a portal that provides access to various content, tools, and other resources about Microsoft security, privacy, and compliance practices.
 
 The Service Trust Portal contains details about Microsoft's implementation of controls and processes that protect our cloud services and the customer data therein. To access some of the resources on the Service Trust Portal, you must sign in as an authenticated user with your Microsoft cloud services account (Microsoft Entra organization account). You'll need to review and accept the Microsoft non-disclosure agreement for compliance materials.
