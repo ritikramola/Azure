@@ -891,3 +891,18 @@ Resource tags are another way to organize resources. Tags provide extra informat
 You can add, modify, or delete resource tags through Windows PowerShell, the Azure CLI, Azure Resource Manager templates, the REST API, or the Azure portal.
 
 You can use Azure Policy to enforce tagging rules and conventions. For example, you can require that certain tags be added to new resources as they're provisioned. You can also define rules that reapply tags that have been removed. Resources don't inherit tags from subscriptions and resource groups, meaning that you can apply tags at one level and not have those tags automatically show up at a different level, allowing you to create custom tagging schemas that change depending on the level (resource, resource group, subscription, and so on).
+
+# Topic 6 :  features and tools in Azure
+
+## Describe the purpose of Microsoft Purview
+Microsoft Purview is a family of data governance, risk, and compliance solutions that helps you get a single, unified view into your data.Microsoft Purview brings insights about your on-premises, multicloud, and software-as-a-service data together.
+
+Two main solution areas comprise Microsoft Purview: risk and compliance and unified data governance.
+
+### Microsoft Purview risk and compliance solutions
+Microsoft 365 features as a core component of the Microsoft Purview risk and compliance solutions. Microsoft Teams, OneDrive, and Exchange are just some of the Microsoft 365 services that Microsoft Purview uses to help manage and monitor your data. 
+
+    Protect sensitive data across clouds, apps, and devices.
+    Identify data risks and manage regulatory compliance requirements.
+    Get started with regulatory compliance.
+
