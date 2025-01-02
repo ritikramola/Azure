@@ -950,6 +950,17 @@ You can manage resource locks from the Azure portal, PowerShell, the Azure CLI, 
 
 To view, add, or delete locks in the Azure portal, go to the Settings section of any resource's Settings pane in the Azure portal.
 
+## Describe the purpose of the Service Trust portal
+The Microsoft Service Trust Portal is a portal that provides access to various content, tools, and other resources about Microsoft security, privacy, and compliance practices.
+
+The Service Trust Portal contains details about Microsoft's implementation of controls and processes that protect our cloud services and the customer data therein. To access some of the resources on the Service Trust Portal, you must sign in as an authenticated user with your Microsoft cloud services account (Microsoft Entra organization account).
+
+### Accessing the Service Trust Portal
+The Service Trust Portal features and content are accessible from the main menu. The categories on the main menu are:
+
+Service Trust Portal provides a quick access hyperlink to return to the Service Trust Portal home page.
+My Library lets you save (or pin) documents to quickly access them on your My Library page.
+All Documents is a single landing place for documents on the service trust portal. 
 
 
 

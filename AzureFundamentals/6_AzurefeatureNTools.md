@@ -191,10 +191,7 @@ The Microsoft Service Trust Portal is a portal that provides access to various c
 The Service Trust Portal contains details about Microsoft's implementation of controls and processes that protect our cloud services and the customer data therein. To access some of the resources on the Service Trust Portal, you must sign in as an authenticated user with your Microsoft cloud services account (Microsoft Entra organization account). You'll need to review and accept the Microsoft non-disclosure agreement for compliance materials.
 
 ### Accessing the Service Trust Portal
-
 You can access the Service Trust Portal at https://servicetrust.microsoft.com/.
-
-Screenshot of the service trust portal with the main menu items visible.
 
 The Service Trust Portal features and content are accessible from the main menu. The categories on the main menu are:
 
