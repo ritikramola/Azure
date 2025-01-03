@@ -15,7 +15,7 @@
 ## Physical Infrastructure Pillar
 1.The physical infrastructure for Azure starts with datacenters.
 
-2.Datacenters are grouped into **Azure Regions** or **Azure Availability Zones** that are designed to help you 
+2.Datacenters are grouped into **Azure Regions** or **Azure Availability Zones** that are designed to help you .
 
 #### Regions
 Places where atleast one or more data centers is(are) present.each region ensures that workloads are appropriately balanced.
