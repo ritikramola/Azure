@@ -1006,3 +1006,38 @@ The Azure CLI is functionally equivalent to Azure PowerShell, with the primary d
 The Azure CLI provides the same benefits of handling discrete tasks or orchestrating complex operations through code. It’s also installable on Windows, Linux, and Mac platforms, as well as through Azure Cloud Shell.
 
 Due to the similarities in capabilities and access between Azure PowerShell and the Bash based Azure CLI, it mainly comes down to which language you’re most familiar with.
+
+# Topic 8 : Tools Used in Azure
+
+## Describe the purpose of Azure Advisor
+Azure Advisor evaluates your Azure resources and makes recommendations to help improve reliability, security, and performance, achieve operational excellence, and reduce costs
+
+When you're in the Azure portal, the Advisor dashboard displays personalized recommendations for all your subscriptions. You can use filters to select recommendations for specific subscriptions, resource groups, or services. The recommendations are divided into five categories:
+
+1.Reliability is used to ensure and improve the continuity of your business-critical applications.
+
+2.Security is used to detect threats and vulnerabilities that might lead to security breaches.
+
+3.Performance is used to improve the speed of your applications.
+
+4.Operational Excellence is used to help you achieve process and workflow efficiency, resource manageability, and deployment best practices.
+
+5.Cost is used to optimize and reduce your overall Azure spending.
+
+## Describe Azure Service Health
+Microsoft Azure provides a global cloud solution to help you manage your infrastructure needs, reach your customers, innovate, and adapt rapidly. Azure Service Health helps you keep track of Azure resource, both your specifically deployed resources and the overall status of Azure. Azure service health does this by combining three different Azure services:
+
+1.Azure status informs you of service outages in Azure on the Azure Status page. The page is a global view of the health of all Azure services across all Azure regions. It’s a good reference for incidents with widespread impact.
+
+2.Service Health provides a narrower view of Azure services and regions. It focuses on the Azure services and regions you're using. This is the best place to look for service impacting communications about outages, planned maintenance activities, and other health advisories because the authenticated Service Health experience knows which services and resources you currently use.
+
+3.Resource Health is a tailored view of your actual Azure resources. It provides information about the health of your individual cloud resources.
+
+By using Azure status, Service health, and Resource Health, Azure Service Health gives you a complete view of your Azure environment-all the way from the global status of Azure services and regions down to specific resources. 
+
+## Describe Azure Monitor
+Azure Monitor is a platform for collecting data on your resources, analyzing that data, visualizing the information, and even acting on the results. Azure Monitor can monitor Azure resources, your on-premises resources, and even multi-cloud resources like virtual machines hosted with a different cloud provider.
+
+### Azure Log Analytics
+Azure Log Analytics is the tool in the Azure portal where you’ll write and run log queries on the data gathered by Azure Monitor. Log Analytics is a robust tool that supports both simple, complex queries, and data analysis.Whether you work with the results of your queries interactively or use them with other Azure Monitor features such as log query alerts or workbooks, Log Analytics is the tool that you're going to use to write and test those queries.
+
