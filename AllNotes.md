@@ -7,7 +7,6 @@
     3.Use Azure CLI interactive mode
 
 ## TWO IMPORTANT PILLAR
-
     Physical Infrastructure pillar and Management Infrastructure pillar
 
 ## Physical Infrastructure Pillar
