@@ -157,7 +157,6 @@ App Service includes full support for hosting web apps by using ASP.NET, ASP.NET
 Much like hosting a website, you can build REST-based web APIs by using your choice of language and framework. You get full Swagger support and the ability to package and publish your API in Azure Marketplace.
 
 3  **WebJobs**
-
 You can use the WebJobs feature to run a program (.exe, Java, PHP, Python, or Node.js) or script (.cmd, .bat, PowerShell, or Bash) in the same context as a web app, API app, or mobile app. WebJobs are often used to run background tasks as part of your application logic.
 
 4  **Mobile apps**
