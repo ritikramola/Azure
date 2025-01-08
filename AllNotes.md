@@ -206,6 +206,7 @@ Azure virtual networks enable you to filter traffic between subnets by using the
 *Connect virtual networks*
 You can link virtual networks together by using virtual network **peering**. Peering allows two virtual networks to connect directly to each other. Peering enables resources in each virtual network to communicate with each other. These virtual networks can be in separate regions.
 
+
 **User-defined routes** (UDR) allow you to control the routing tables between subnets within a virtual network or between virtual networks.
 
 **Note**
