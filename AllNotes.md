@@ -144,7 +144,6 @@ Functions are a key component of serverless computing. They're also a general co
  Both VMs and containers provide excellent hosting solutions. VMs give you maximum control of the hosting environment and let u to configure it exactly how you want. Containers, with the ability to isolate and individually manage different aspects of the hosting solution, can also be a robust and compelling option.
 
 ### Azure App Service
-
 App Service enables you to build and host web apps, background jobs, mobile back-ends, and RESTful APIs in the programming language of your choice without managing infrastructure. It offers automatic scaling and high availability.
 
 Azure App Service lets you focus on building and maintaining your app, and Azure focuses on keeping the environment up and running.
