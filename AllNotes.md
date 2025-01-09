@@ -70,7 +70,6 @@ Resources are gathered into resource groups, and resource groups are gathered in
 
 # Topic 2 - Services provided by Azure
 
-
 ## Azure Virtual Machine
 With Azure Virtual Machines (VMs), you can create and use VMs in the cloud.Just like a physical computer, you can customize all of the software running on your VM.VM provides (IAAS features).
 
