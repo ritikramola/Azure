@@ -1,4 +1,7 @@
 # Topic One - Azure Core
+
+
+
 **Azure Arc** can help manage your cloud environment
 
 ## How to work in Sandbox
