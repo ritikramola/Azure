@@ -1,5 +1,4 @@
 # What is AZURE
-
 1.  Microsoft Azure is a cloud computing platform with an ever-expanding set of services to help you build solutions to meet your business goals. Azure services support everything from simple to complex. Azure has simple web services for hosting your business presence in the cloud
 
 2.  Azure provides a wealth of cloud-based services like remote storage, database hosting, and centralized account management.
